@@ -57,3 +57,33 @@ body, html {
    background-color:#42abe1!important;
    color: white!important;
 }
+
+#googleMap{
+  position: absolute;
+   left: 0px;
+   top: 0px;
+   z-index: -1;
+}
+
+.maplayout{
+  box-shadow: 0px 0px 36px -3px black;
+    height: 600px;
+    width: 320px;
+    position: relative;
+    top: 20px;
+    left: 970px;
+    border-radius: 12px;
+    background: white;
+}
+
+.searchbar
+{
+  border-radius: 12px;
+  width: 785px;
+  box-shadow: 0px 0px 36px -3px black;
+  height: 60px;
+  position: absolute;
+  top: 20px;
+  padding: 20px;
+  left: 160px;
+}
