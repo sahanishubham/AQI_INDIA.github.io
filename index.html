@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <title>AQI-INDIA | HOME </title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/jquery.onepage-scroll.js"></script>
-
-
+<link rel="shortcut icon" id="favicon" href="images/iconlogo.png">
+<link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/loader.css">
 <link rel="stylesheet" href="css/onepage-scroll.css">
 <link rel="stylesheet" href="css/main.css">
-<link rel="shortcut icon" id="favicon" href="images/iconlogo.png">
 <body>
   <script>
     $(document).ready(function(){
@@ -24,132 +24,80 @@
   </script>
 
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar" style="background: white;box-shadow: 6px 8px 18px -8px black;">
-    <a href="#home" class="w3-bar-item w3-button w3-hide-small w3-left"> <img src="images/AQI.png" alt="Lights" class="w3-image" width="50px" height="50px"> </a>
-    <a href="#login" id="loginbtn" class="w3-bar-item w3-button w3-hide-small w3-right ">Login </a>
-    <a href="#AboutUs" class="w3-bar-item w3-button w3-hide-small w3-right">About Us </a>
-    <a href="#Download" class="w3-bar-item w3-button w3-hide-small w3-right"> Download </a>
-    <a href="#FAQ" class="w3-bar-item w3-button w3-hide-small w3-right"> FAQ </a>
-    <a href="#Resources" class="w3-bar-item w3-button w3-hide-small w3-right"> Resources</a>
-    <a href="#blog" class="w3-bar-item w3-button w3-hide-small w3-right"> Blog</a>
-    <a href="#home" class="w3-bar-item w3-button w3-right"> Home</a>
-  </div>
-</div>
-
-<br><br>
 <div class="main">
-<section>
-<div class="w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity">
-      <script>
 
-      </script>
-      <div id="preloader">
-          <img src="images/AQI.png" class="img-responsive col-md-offset-5 " alt="AQIFinalLogoGradient" style="width: 275px;height: 158px;margin-top:40px;" class="img-responsive">
-       <div class="spinner">
-         <i></i>
-         <i></i>
-         <i></i>
-         <i></i>
-         <i></i>
-         <i></i>
-         <i></i>
-       </div>
+  <nav class="navbar" style="background: white;box-shadow: 6px 8px 18px -8px black;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </div>
-    </span>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav" data-spy="affix" data-offset-top="0" >
+          <a class="navbar-brand" href="#home"><img src="images/AQI.png" alt="AQI-INDIA" class="image-responsive" width="50px" height="35px"></a>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#Resources">Resources</a></li>
+          <li><a href="#FAQ">FAQ</a></li>
+          <li><a href="#Download">Download</a></li>
+          <li><a href="#AboutUs">AboutUs</a></li>
+          <li><a href="#login" id="loginbtn" class="btn btn-md">Login </a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <div id="preloader">
+      <br><br><br><br>
+     <img src="images/AQI.png" class="img-responsive col-md-offset-5 " alt="AQIFinalLogoGradient" style="width: 275px;height: 158px;margin-top:40px;" class="img-responsive">
+     <div class="spinner">
+       <i></i>
+       <i></i>
+       <i></i>
+       <i></i>
+       <i></i>
+       <i></i>
+       <i></i>
+     </div>
+    </div>
+
+<section>
+<div id="home">
+  <div id="googleMap" class="w3-round-large " style="width:100%;min-height: 100%;height: 100%;"></div>
+  <div class="row">
+    <input type="text" name="" value="" placeholder="Search.. " class="searchbar col-md-6 col-md-offset-2 animated bounceInLeft"></input>
+    <div class="maplayout col-md-3 animated bounceInDown"></div>
   </div>
-  <input type="text" name="" value="" placeholder="Search.. " class="searchbar"></input>
-  <div id="googleMap" class="w3-round-large " style="width:100%;height:800px;"></div>
-  <div class="maplayout"></div>
+
 </div>
 </section>
 
-<!-- About Section) -->
 <section>
-<div class="w3-content w3-container w3-padding-64" id="blog">
-  <h3 class="w3-center">Air Quality Index </h3>
-  <div class="w3-row-padding w3-margin-top">
-
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="images/good.psd" style="width:100%">
-      <div class="w3-container">
-        <h5>Good</h5>
-      </div>
-    </div>
+  <div class="container" style="margin-top:100px;">
+    <div class="row">
+    <div class="col-sm-4 well">.col-sm-4</div>
+    <div class="col-sm-4 well">.col-sm-4</div>
+    <div class="col-sm-4 well">.col-sm-4</div>
   </div>
 
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="img_monterosso.jpg" style="width:100%">
-      <div class="w3-container">
-        <h5>Moderate</h5>
-      </div>
-    </div>
+  <div class="row">
+  <div class="col-sm-4 well">.col-sm-4</div>
+  <div class="col-sm-4 well">.col-sm-4</div>
+  <div class="col-sm-4 well">.col-sm-4</div>
+  </div>
   </div>
 
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="img_vernazza.jpg" style="width:100%">
-      <div class="w3-container">
-        <h5>Unhealthy for Groups</h5>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="w3-row-padding w3-margin-top">
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="img_manarola.jpg" style="width:100%">
-      <div class="w3-container">
-        <h5>Unhealthy</h5>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="img_corniglia.jpg" style="width:100%">
-      <div class="w3-container">
-        <h5>Very Unhealthy</h5>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="img_riomaggiore.jpg" style="width:100%">
-      <div class="w3-container">
-        <h5>Hazardous</h5>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-</section>
-
-<section>
-<!-- Container (Resources Section) -->
-<img src="images/poll1.jpg" alt="" height="800px" width="100%">
 </section>
 
 
 <section>
-  <br><br>
-  <br><br>
-  <br><br>
-  <br><br>
-  <br><br>
-  <br><br>
-  <br><br>
-  <br><br>
-  <br><br>
-
   <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
     <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
     <div class="w3-xlarge w3-section">
@@ -166,7 +114,6 @@
 
 </div>
 <script>$(".main").onepage_scroll();</script>
-<!-- Add Google Maps and its API-->
 <script src="js/maps.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApEO-RBQRzIpAUwDSRwItfWyfcytdvcQI&callback=myMap"></script>
 </body>

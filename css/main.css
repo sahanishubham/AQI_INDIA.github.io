@@ -41,14 +41,14 @@ body, html {
     }
 }
  #myNavbar{
-   padding: 5px 150px 5px;
+   padding: 5px 110px 5px;
  }
  #loginbtn{
    background: #42abe1;
     color: white;
     border-radius: 26px;
     padding: 3px 35px;
-    margin-top: 5px;
+    margin-top: 10px;
  }
  .w3-bar .w3-button:hover{
     background-color:#0000!important;
@@ -70,8 +70,7 @@ body, html {
     height: 600px;
     width: 320px;
     position: relative;
-    top: 20px;
-    left: 970px;
+    top: 100px;
     border-radius: 12px;
     background: white;
 }
@@ -79,11 +78,10 @@ body, html {
 .searchbar
 {
   border-radius: 12px;
-  width: 785px;
   box-shadow: 0px 0px 36px -3px black;
   height: 60px;
-  position: absolute;
-  top: 20px;
+  position: relative;
+  top: 100px;
   padding: 20px;
-  left: 160px;
+  margin-right: 15px;
 }
