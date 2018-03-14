@@ -1,120 +1,243 @@
 <!DOCTYPE html>
-<html>
-<title>AQI-INDIA | HOME </title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>AQI-INDIA | Home</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<style media="screen">
+			.dmap{
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body class="demo-1">
+		<div id="container" class="container intro-effect-push">
+			<header class="header">
+				<div class="bg-img">
+					<iframe src="3dMap.html" seamless class="dmap" ></iframe>
+				</div>
+				<div class="title">
+				</div>
+			</header>
+			<button class="trigger" data-info="Home" ><span style="border:2ps solid black;">Home</span></button>
+			<div class="title">
+				<iframe src="Home/index.html" seamless style="width:100%;min-height:200px;border:none;"></iframe>
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="js/jquery.onepage-scroll.js"></script>
-<link rel="shortcut icon" id="favicon" href="images/iconlogo.png">
-<link rel="stylesheet" href="css/animate.css">
-<link rel="stylesheet" href="css/loader.css">
-<link rel="stylesheet" href="css/onepage-scroll.css">
-<link rel="stylesheet" href="css/main.css">
-<body>
-  <script>
-    $(document).ready(function(){
-      setTimeout(function() {
-      $('#preloader').fadeOut('fast');
-      },1500);
-    });
-  </script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+			</div>
+
+			<article class="content">
+			</article>
+			<section class="related">
+
+			</section>
+		</div>
+		<!-- /container -->
+		<script src="js/classie.js"></script>
+		<script>
+			(function() {
+
+				var ie = (function(){
+					var undef,rv = -1; // Return value assumes failure.
+					var ua = window.navigator.userAgent;
+					var msie = ua.indexOf('MSIE ');
+					var trident = ua.indexOf('Trident/');
+
+					if (msie > 0) {
+						// IE 10 or older => return version number
+						rv = parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+					} else if (trident > 0) {
+						// IE 11 (or newer) => return version number
+						var rvNum = ua.indexOf('rv:');
+						rv = parseInt(ua.substring(rvNum + 3, ua.indexOf('.', rvNum)), 10);
+					}
+
+					return ((rv > -1) ? rv : undef);
+				}());
 
 
-<div class="main">
+				// disable/enable scroll (mousewheel and keys) from http://stackoverflow.com/a/4770179
+				// left: 37, up: 38, right: 39, down: 40,
+				// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+				var keys = [32, 37, 38, 39, 40], wheelIter = 0;
 
-  <nav class="navbar" style="background: white;box-shadow: 6px 8px 18px -8px black;">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav" data-spy="affix" data-offset-top="0" >
-          <a class="navbar-brand" href="#home"><img src="images/AQI.png" alt="AQI-INDIA" class="image-responsive" width="50px" height="35px"></a>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#Resources">Resources</a></li>
-          <li><a href="#FAQ">FAQ</a></li>
-          <li><a href="#Download">Download</a></li>
-          <li><a href="#AboutUs">AboutUs</a></li>
-          <li><a href="#login" id="loginbtn" class="btn btn-md">Login </a></li>
+				function preventDefault(e) {
+					e = e || window.event;
+					if (e.preventDefault)
+					e.preventDefault();
+					e.returnValue = false;
+				}
 
-        </ul>
-      </div>
-    </div>
-  </nav>
+				function keydown(e) {
+					for (var i = keys.length; i--;) {
+						if (e.keyCode === keys[i]) {
+							preventDefault(e);
+							return;
+						}
+					}
+				}
 
+				function touchmove(e) {
+					preventDefault(e);
+				}
 
-    <div id="preloader">
-      <br><br><br><br>
-     <img src="images/AQI.png" class="img-responsive col-md-offset-5 " alt="AQIFinalLogoGradient" style="width: 275px;height: 158px;margin-top:40px;" class="img-responsive">
-     <div class="spinner">
-       <i></i>
-       <i></i>
-       <i></i>
-       <i></i>
-       <i></i>
-       <i></i>
-       <i></i>
-     </div>
-    </div>
+				function wheel(e) {
+					// for IE
+					//if( ie ) {
+						//preventDefault(e);
+					//}
+				}
 
-<section>
-<div id="home">
-  <div id="googleMap" class="w3-round-large " style="width:100%;min-height: 100%;height: 100%;"></div>
-  <div class="row">
-    <input type="text" name="" value="" placeholder="Search.. " class="searchbar col-md-6 col-md-offset-2 animated bounceInLeft"></input>
-    <div class="maplayout col-md-3 animated bounceInDown"></div>
-  </div>
+				function disable_scroll() {
+					window.onmousewheel = document.onmousewheel = wheel;
+					document.onkeydown = keydown;
+					document.body.ontouchmove = touchmove;
+				}
 
-</div>
-</section>
+				function enable_scroll() {
+					window.onmousewheel = document.onmousewheel = document.onkeydown = document.body.ontouchmove = null;
+				}
 
-<section>
-  <div class="container" style="margin-top:100px;">
-    <div class="row">
-    <div class="col-sm-4 well">.col-sm-4</div>
-    <div class="col-sm-4 well">.col-sm-4</div>
-    <div class="col-sm-4 well">.col-sm-4</div>
-  </div>
+				var docElem = window.document.documentElement,
+					scrollVal,
+					isRevealed,
+					noscroll,
+					isAnimating,
+					container = document.getElementById( 'container' ),
+					trigger = container.querySelector( 'button.trigger' );
 
-  <div class="row">
-  <div class="col-sm-4 well">.col-sm-4</div>
-  <div class="col-sm-4 well">.col-sm-4</div>
-  <div class="col-sm-4 well">.col-sm-4</div>
-  </div>
-  </div>
+				function scrollY() {
+					return window.pageYOffset || docElem.scrollTop;
+				}
 
-</section>
+				function scrollPage() {
+					scrollVal = scrollY();
 
+					if( noscroll && !ie ) {
+						if( scrollVal < 0 ) return false;
+						// keep it that way
+						window.scrollTo( 0, 0 );
+					}
 
-<section>
-  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-    <div class="w3-xlarge w3-section">
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-      <i class="fa fa-snapchat w3-hover-opacity"></i>
-      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
-    </div>
-    <p>Powered by <a href="https://www.aqi.in" title="AQI-INDIA" target="_blank" class="w3-hover-text-green">https://www.aqi.in</a></p>
-  </footer>
-</section>
+					if( classie.has( container, 'notrans' ) ) {
+						classie.remove( container, 'notrans' );
+						return false;
+					}
 
-</div>
-<script>$(".main").onepage_scroll();</script>
-<script src="js/maps.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApEO-RBQRzIpAUwDSRwItfWyfcytdvcQI&callback=myMap"></script>
-</body>
+					if( isAnimating ) {
+						return false;
+					}
+
+					if( scrollVal <= 0 && isRevealed ) {
+						toggle(0);
+					}
+					else if( scrollVal > 0 && !isRevealed ){
+						toggle(1);
+					}
+				}
+
+				function toggle( reveal ) {
+					isAnimating = true;
+
+					if( reveal ) {
+						classie.add( container, 'modify' );
+					}
+					else {
+						noscroll = true;
+						disable_scroll();
+						classie.remove( container, 'modify' );
+					}
+
+					// simulating the end of the transition:
+					setTimeout( function() {
+						isRevealed = !isRevealed;
+						isAnimating = false;
+						if( reveal ) {
+							noscroll = false;
+							enable_scroll();
+						}
+					}, 1200 );
+				}
+
+				// refreshing the page...
+				var pageScroll = scrollY();
+				noscroll = pageScroll === 0;
+
+				disable_scroll();
+
+				if( pageScroll ) {
+					isRevealed = true;
+					classie.add( container, 'notrans' );
+					classie.add( container, 'modify' );
+				}
+
+				window.addEventListener( 'scroll', scrollPage );
+				trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
+			})();
+		</script>
+	</body>
 </html>
