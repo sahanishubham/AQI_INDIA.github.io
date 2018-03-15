@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>AQI-INDIA</title>
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    #infoDiv {
+      position: absolute;
+      top: 15px;
+      left: 60px;
+    }
+
+    #infoDiv input {
+      border: 1px solid black;
+      height: 65px;
+      width: 65px;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px;
+    }
+
+    #details{
+      position: absolute;
+      top: 70px;
+      right: 15px;
+      height:500px;
+      width: 250px;
+      border-radius: 1%;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px;
+      background: url('img/dummy.png');
+      background-size:     100% 100%;                      /* <------ */
+      background-repeat:   no-repeat;
+      background-position: center center;
+      padding: 5px;
+    }
+/* .esri-search{
+  width: 300px;
+} */
+  </style>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.6/esri/css/main.css">
+  <script src="https://js.arcgis.com/4.6/"></script>
+
+  <script>
+    require([
+      "esri/Map",
+      "esri/views/MapView",
+      "esri/widgets/Search",
+      "dojo/domReady!"
+    ], function(Map, MapView, Search) {
+
+      var map = new Map({
+        basemap: "hybrid"
+      });
+
+      var view = new MapView({
+        container: "viewDiv",
+        map: map,
+        zoom: 4,
+        center: [15, 65] // longitude, latitude
+      });
+
+      var searchWidget = new Search({
+        view: view
+      });
+
+      // Add the search widget to the top right corner of the view
+      view.ui.add(searchWidget, {
+        position: "top-right"
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+  <div id="viewDiv"></div>
+  <a href="3dMap.html">
+  <div id="infoDiv">
+   <input class="esri-component esri-widget-button esri-widget esri-interactive" type="button"
+    id="switch-btn" value="3D">
+  </div>
+  </a>
+
+  <div id="details">
+
+  </div>
+
+</body>
+</html>
