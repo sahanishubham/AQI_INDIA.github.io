@@ -6,7 +6,9 @@
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 
 <title>AQI-INDIA</title>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://js.arcgis.com/4.6/esri/css/main.css">
   <script src="https://js.arcgis.com/4.6/"></script>
 
@@ -46,17 +48,13 @@
 
     #details{
       position: absolute;
-      top: 70px;
-      right: 15px;
-      height:500px;
-      width: 250px;
-      border-radius: 1%;
+      top: 100px;
+      right: 100px;
+      height: 500px;
+      width: 315px;
+      border-radius: 2%;
       box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px;
-      background: url('img/dummy.png');
-      background-size:   100%  100%;                      /* <------ */
-      background-repeat:   no-repeat;
-      background-position: center center;
-      padding: 5px;
+      background: white;
     }
   </style>
 
@@ -64,14 +62,13 @@
     require([
         "esri/Map",
         "esri/views/SceneView",
-        "esri/widgets/Search",
         "esri/layers/TileLayer",
         "dojo/dom",
         "dojo/on",
         "dojo/domReady!"
       ],
       function(
-        Map, SceneView, Search, TileLayer, dom, on
+        Map, SceneView, TileLayer, dom, on
       ) {
 
         /*****************************************************************
@@ -110,14 +107,6 @@
           map: map
         });
 
-        var searchWidget = new Search({
-          view: view
-        });
-
-        // Add the search widget to the top right corner of the view
-        view.ui.add(searchWidget, {
-          position: "top-right"
-        });
         /*****************************************************************
          * The map handles the layers' data while the view and layer views
          * take care of renderering the layers
@@ -168,10 +157,7 @@
       id="switch-btn" value="2D">
   </div>
   </a>
-
-
     <div id="details">
-
     </div>
 </body>
 </html>

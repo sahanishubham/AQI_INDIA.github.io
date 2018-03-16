@@ -29,17 +29,13 @@
 
     #details{
       position: absolute;
-      top: 70px;
-      right: 15px;
-      height:500px;
-      width: 250px;
-      border-radius: 1%;
+      top: 100px;
+      right: 100px;
+      height: 500px;
+      width: 315px;
+      border-radius: 2%;
       box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px;
-      background: url('img/dummy.png');
-      background-size:     100% 100%;                      /* <------ */
-      background-repeat:   no-repeat;
-      background-position: center center;
-      padding: 5px;
+      background: white;
     }
 /* .esri-search{
   width: 300px;
@@ -53,7 +49,6 @@
     require([
       "esri/Map",
       "esri/views/MapView",
-      "esri/widgets/Search",
       "dojo/domReady!"
     ], function(Map, MapView, Search) {
 
@@ -68,14 +63,14 @@
         center: [15, 65] // longitude, latitude
       });
 
-      var searchWidget = new Search({
-        view: view
-      });
-
-      // Add the search widget to the top right corner of the view
-      view.ui.add(searchWidget, {
-        position: "top-right"
-      });
+      // var searchWidget = new Search({
+      //   view: view
+      // });
+      //
+      // // Add the search widget to the top right corner of the view
+      // view.ui.add(searchWidget, {
+      //   position: "top-right"
+      // });
 
     });
   </script>
