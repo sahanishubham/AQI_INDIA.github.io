@@ -8,36 +8,55 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="shortcut icon" href="../favicon.ico">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" href="css/loader.css">
 		<style media="screen">
 			.dmap{
 				width: 100%;
 				height: 100%;
 			}
 		</style>
+
+		<script>
+			$(document).ready(function(){
+				setTimeout(function() {
+				$('#preloader').fadeOut('fast');
+				},00);
+			});
+		</script>
 	</head>
 	<body class="demo-1">
+		<div id="preloader">
+			<br><br><br><br>
+		 <center><img src="img/AQI.png" alt="AQIFinalLogoGradient" style="width: 275px;height: 158px;margin-top:40px;margin-left:auto;margin-right:auto;" class="img-responsive"></cener>
+		 <div class="spinner">
+			 <i></i>
+			 <i></i>
+			 <i></i>
+			 <i></i>
+			 <i></i>
+			 <i></i>
+			 <i></i>
+		 </div>
+		</div>
 		<div id="container" class="container intro-effect-push">
 			<header class="header">
 				<div class="bg-img">
-					<iframe src="3dMap.html" seamless class="dmap" ></iframe>
+					<iframe src="http://g0.ipcamlive.com/player/player.php?alias=5a8f1fc3b4e64&autoplay=1" seamless class="dmap" frameborder="0" allowfullscreen></iframe>
+
+					<!-- <iframe src="3dMap.html" seamless class="dmap" ></iframe> -->
 				</div>
 				<div class="title">
 				</div>
 			</header>
 			<button class="trigger bounce" data-info="Home" ><span style="border:2ps solid black;">Home</span></button>
 			<div class="title">
-				<iframe src="Home/index.html" seamless style="width:100%;min-height:900px;border:none;"></iframe>
+				<iframe src="Home.html" seamless style="width:100%;min-height:900px;border:none;"></iframe>
 			</div>
-
-			<article class="content">
-			</article>
-			<section class="related">
-
-			</section>
 		</div>
 		<!-- /container -->
 		<script src="js/classie.js"></script>
