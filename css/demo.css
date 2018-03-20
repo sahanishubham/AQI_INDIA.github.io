@@ -26,22 +26,8 @@ body {
 	-webkit-font-smoothing: antialiased;
 	overflow-x: hidden;
 }
-
-.demo-7 {
-	background: #f5f5f5;
-}
-
-.demo-5 {
-	background: #f8dab4;
-	color: #5c554c;
-}
-
-.demo-6 {
-	background: #f1f1f1;
-}
-
 .demo-1 {
-	background: #fcfcff;
+	background:white;
 }
 
 a {
@@ -52,24 +38,6 @@ a {
 
 a:hover, a:focus {
 	color: #69606b;
-}
-
-.demo-4 a {
-	color: #43939d;
-}
-
-.demo-4 a:hover,
-.demo-4 a:focus {
-	color: #7b8d92;
-}
-
-.demo-8 a {
-	color: #cf7000;
-}
-
-.demo-8 a:hover,
-.demo-8 a:focus {
-	color: #cf7000;
 }
 
 /* To Navigation Style */
@@ -101,26 +69,6 @@ a:hover, a:focus {
 .codrops-top span.right a {
 	display: block;
 	float: left;
-}
-
-.codrops-icon:before {
-	text-transform: none;
-	font-weight: normal;
-	font-style: normal;
-	font-variant: normal;
-	font-family: 'codropsicons';
-	text-align: center;
-	speak: none;
-	margin: 0 0.55em 0 0;
-	-webkit-font-smoothing: antialiased;
-}
-
-.codrops-icon-drop:before {
-	content: "\e001";
-}
-
-.codrops-icon-prev:before {
-	content: "\e004";
 }
 
 .codrops-demos {
