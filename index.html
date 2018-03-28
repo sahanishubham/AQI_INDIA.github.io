@@ -1,692 +1,463 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="">
-		<title>AQI-INDIA | Home </title>
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link rel="shortcut icon" href="img/Aqilogo.png">
-		<link rel="stylesheet" type="text/css" href="css/loader.css" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<link rel="stylesheet" type="text/css" href="css/main.css" />
-		<link rel="stylesheet" type="text/css" href="css/cloud.css" />
-		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-		<link rel="stylesheet" href="css/circle.css">
-		<script>
-			$(document).ready(function() {
-				setTimeout(function() {
-				$('#preloader').fadeOut('fast');
-				},1500);
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AQI-INDIA | HOME</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap and Font Awesome css-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Google fonts - Roboto Condensed for headings, Open Sans for copy-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,700%7COpen+Sans:300,400,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.lightblue.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/Aqilogo.png">
+  </head>
+  <body data-spy="scroll" data-target="#navigation" data-offset="120">
 
-				$('#fullpage').fullpage({
-					sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE','#1bbc9b', '#4BBFC3', '#7BAABE'],
-					easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
-				});
-			});
-		</script>
-
-<style media="screen">
-	.c100.small{
-		font-size: 60px;
-	}
-</style>
-	</head>
-	<body class="demo-1">
-		<!-- /container -->
-		<div id="container" style="padding-left:0;padding-right:0" class="container-fluid intro-effect-push">
-			<!-- Top Navigation -->
-			<div class="codrops-top clearfix">
-				<a class="" href=""></a>
-				<span class="right"><a class="" href="#" style="position:relative;top:2px;"> <i class="fa fa-video-camera" style="color:red;"></i> &nbsp; <span style="color:red;" id="livetext"> Live Stream</span></a></span>
-			</div>
-			<!-- Top Navigation -->
-			<!-- loader -->
-			<div id="preloader" style="height:1000px;">
-				<br><br><br><br><br><br>
-			 <center><img src="img/AQI.png" alt="AQIFinalLogoGradient" style="width: 275px;height: 158px;"></cener>
-			 <div class="spinner">
-				 <i></i>
-				 <i></i>
-				 <i></i>
-				 <i></i>
-				 <i></i>
-				 <i></i>
-				 <i></i>
-			 </div>
-			</div>
-			<!-- loader -->
-			<!-- live view -->
-			<header class="header">
-				<div class="bg-img">
-					<iframe src="http://g0.ipcamlive.com/player/player.php?alias=5a8f1fc3b4e64&autoplay=1" seamless class="livevideo" frameborder="0" allowfullscreen></iframe>
-				</div>
-			</header>
-			<!-- live view -->
-			<!-- hovering Arrow -->
-			<button class="trigger bounce" data-info="Home"><span>Home</span></button>
-			<!-- hovering Arrow -->
-			<div class="title">
-				<div id="header">
-					<nav class="navbar" style="background: white;box-shadow: 6px 8px 18px -8px black;">
-						<div class="container-fluid">
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-							</div>
-							<div class="collapse navbar-collapse" id="myNavbar">
-								<ul class="nav navbar-nav" data-spy="affix" data-offset-top="0" >
-
-									<a class="navbar-brand" href="#home"><img src="img/AQI.png" alt="AQI-INDIA" class="image-responsive" width="50px" height="35px"></a>
-								</ul>
-								<ul class="nav navbar-nav navbar-right">
-									<li><a href="#home">Home</a></li>
-									<li><a href="#blog">Blog</a></li>
-									<li><a href="#Resources">Resources</a></li>
-									<li><a href="#FAQ">FAQ</a></li>
-									<li><a href="#Download">Download</a></li>
-									<li><a href="#AboutUs">AboutUs</a></li>
-									<li><a href="#login"> <span id="loginbtn">Login</span></a></li>
-								</ul>
-							</div>
-						</div>
-					</nav>
-				</div>
-
-				<div id="fullpage">
-
-					<div class="section " id="section0">
+    <!-- loader start -->
+    <div id="preloader" style="height:1000px;">
+      <br><br><br><br><br><br>
+     <center><img src="img/AQI.png" alt="AQIFinalLogoGradient" style="width: 250px;height: 160px;"></cener>
+     <div class="spinner">
+       <i></i>
+       <i></i>
+       <i></i>
+       <i></i>
+       <i></i>
+       <i></i>
+       <i></i>
+     </div>
+    </div>
 
 
+    <!-- Live stream-->
+    <section id="livestream" class="intro image-background" style="padding-top:0px;padding-bottom:0px;background-color:black;">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="container clearfix">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-12">
+              <p class="roboto">Welcome </p>
+              <h1>We are<br /><span class="bold">AQI</span> INDIA</h1>
+              <p class="roboto">Your real time information about the Air Quality of India </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <iframe src="http://g0.ipcamlive.com/player/player.php?alias=5a8f1fc3b4e64&autoplay=1" class="livevideo"></iframe>
+      <a href="#maps" class="icon animated scroll-to bounce"><i class="arrow"></i></a>
+      <a class="" href="#" > <i class="fa fa-video-camera livetext"></i> &nbsp; <span class="livetext"> Live Stream</span></a>
+    </section>
 
-						<div class="info">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="row">
-										<h2>New Delhi</h2>
-									</div>
-									<div class="row">
-										<h2>AQI <br> <span style="font-size:20px;">Unhealthy</span></h2>
-									</div>
-								</div>
-								<div class="col-md-2" style="margin-top:80px;">
-										<h3><span style="background-color: #bf459a;border-radius:10px;padding: 5px 14px;font-size: 33px;color:white;">72</span></h3>
-								</div>
 
-								<div class="col-md-4">
-									<img src="img/men.png" alt="" width="90px" class="img-responsive">
-								</div>
-							</div>
-								<br>
-							<div class="row">
-								<div class="col-md-3">
-									<img src="img/policon.png" alt="">
-								</div>
+    <!-- navbar-->
+    <header class="header">
+      <div class="sticky-wrapper">
+        <div role="navigation" class="navbar navbar-default" style="box-shadow:0px 0px 15px -4px black;padding:5px;">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+              <a href="#livestream" class="navbar-brand scroll-to" style="padding-top:10px;"><img src="img/AQI.png" alt="" height="35px" width="50px"></a>
+            </div>
+            <div id="navigation" class="collapse navbar-collapse" >
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#maps">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#Resources">Resources</a></li>
+                <li><a href="#FAQ">FAQ</a></li>
+                <li><a href="#Download">Download</a></li>
+                <li><a href="#AboutUs">AboutUs</a></li>
+                <li><a href="#login"> <span id="loginbtn">Login</span></a></li>
+                <li>
+                  <a href="#livestream" style="color:red;" > <i class="fa fa-video-camera"></i> &nbsp; <span class=""> Live Stream</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /.navbar-->
 
-								<div class="col-md-3">
-									<div class="c100 p65 small">
-											<span>25</span>
-											<div class="slice">
-													<div class="bar"></div>
-													<div class="fill"></div>
-											</div>
-									</div>
-								</div>
+    <!-- Maps-->
+    <section id="maps" style="padding-top:0px;padding-bottom:0px;">
+      <div class="info">
+        <div class="row" style="margin-bottom:-15px;">
+          <div class="col-md-6">
+            <div class="row">
+              <h2>New Delhi</h2>
+            </div>
+            <div class="row">
+              <h2>AQI <br> <span style="font-size:20px;">Unhealthy</span></h2>
+            </div>
+          </div>
+          <div class="col-md-2" style="margin-top:80px;">
+              <h3><span style="background-color: #bf459a;border-radius:10px;padding: 5px 14px;font-size: 33px;color:white;">72</span></h3>
+          </div>
 
-								<div class="col-md-3">
-									<img src="img/policon.png" alt="">
-								</div>
+          <div class="col-md-4">
+            <img src="img/men.png" alt="" width="90px" class="img-responsive">
+          </div>
+        </div>
+          <br>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="img/policon.png" alt="">
+          </div>
 
-								<div class="col-md-3">
-									<div class="c100 p45 small">
-											<span>12</span>
-											<div class="slice">
-													<div class="bar"></div>
-													<div class="fill"></div>
-											</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="col-md-3">
-									<img src="img/temp.png" alt="">
-								</div>
-
-								<div class="col-md-3">
-									<div class="c100 p15 small">
-											<span>17%</span>
-											<div class="slice">
-													<div class="bar"></div>
-													<div class="fill"></div>
-											</div>
-									</div>
-								</div>
-
-								<div class="col-md-3">
-									<img src="img/humidity.png" alt="">
-								</div>
-
-								<div class="col-md-3">
-									<div class="c100 p25 small">
-											<span>23%</span>
-											<div class="slice">
-													<div class="bar"></div>
-													<div class="fill"></div>
-											</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="col-md-3">
-									<img src="img/carbon.png" alt="">
-								</div>
-
-								<div class="col-md-3">
-									<div class="c100 p35 small">
-											<span>11%</span>
-											<div class="slice">
-													<div class="bar"></div>
-													<div class="fill"></div>
-											</div>
-									</div>
-								</div>
-
-								<div class="col-md-3">
-									<img src="img/nitrogen.png" alt="">
-								</div>
-
-								<div class="col-md-3">
-									<div class="c100 p5 small">
-											<span>17</span>
-											<div class="slice">
-													<div class="bar"></div>
-													<div class="fill"></div>
-											</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="col-md-3">
-									<img src="img/sulpher.png" alt="">
-								</div>
-
-								<div class="col-md-3">
-									<div class="c100 p45 small">
-											<span>78</span>
-											<div class="slice">
-													<div class="bar"></div>
-													<div class="fill"></div>
-											</div>
-									</div>
-								</div>
-
-								<div class="col-md-3">
-									<img src="img/ozone.png" alt="">
-								</div>
-
-								<div class="col-md-3">
-									<div class="c100 p19 small">
-											<span>29</span>
-											<div class="slice">
-													<div class="bar"></div>
-													<div class="fill"></div>
-											</div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-3">
-									<img src="img/noise.png" alt="">
-								</div>
-
-								<div class="col-md-3">
-
-								</div>
-
-								<div class="col-md-3">
-								</div>
-
-								<div class="col-md-3">
-									<div class="c100 p15 small">
-											<span>35 dB</span>
-											<div class="slice">
-													<div class="bar"></div>
-													<div class="fill"></div>
-											</div>
-									</div>
-								</div>
-							</div>
-							<br>
-
-							<div class="col-md-6">
-								<h5>Last Update</h5>
-							</div>
-							<div class="col-md-6">
-								<h5>17 Feb,4 PM</h5>
-							</div>
-
-						</div>
-						<div id="map" style="width:100%;height:800px;" style="position:relative;top:0"></div>
-					</div>
-
-					<div class="section" id="section1">
-
-					<div class="cloud large cloud-1">
-					<div></div><div></div><div></div><div></div>
-					</div>
-					<div class="cloud normal cloud-2">
-					<div></div><div></div><div></div><div></div>
-					</div>
-					<div class="cloud small cloud-3">
-					<div></div><div></div><div></div><div></div>
-					</div>
-					<div class="cloud tiny cloud-4">
-					<div></div><div></div><div></div><div></div>
-					</div>
-					<div class="cloud large cloud-5">
-					<div></div><div></div><div></div><div></div>
-					</div>
-					<div class="cloud normal cloud-6">
-					<div></div><div></div><div></div><div></div>
-					</div>
-					<div class="cloud small cloud-7">
-					<div></div><div></div><div></div><div></div>
-					</div>
-					<div class="cloud tiny cloud-8">
-					<div></div><div></div><div></div><div></div>
-					</div>
-					<div class="cloud small cloud-9">
-					<div></div><div></div><div></div><div></div>
-					</div>
-					<div class="cloud normal cloud-10">
-					<div></div><div></div><div></div><div></div>
-					</div>
-					<div class="cloud tiny cloud-11">
-					<div></div><div></div><div></div><div></div>
-					</div>
-					<div class="cloud small cloud-12">
-					<div></div><div></div><div></div><div></div>
-					</div>
-
-					</div>
-					<div class="section" id="section2">
-						<div class="cloud large cloud-1">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud normal cloud-2">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud small cloud-3">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud tiny cloud-4">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud large cloud-5">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud normal cloud-6">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud small cloud-7">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud tiny cloud-8">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud small cloud-9">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud normal cloud-10">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud tiny cloud-11">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud small cloud-12">
-						<div></div><div></div><div></div><div></div>
-						</div>
-
-					</div>
-
-					<div class="section" id="section3">
-						<div class="cloud large cloud-1">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud normal cloud-2">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud small cloud-3">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud tiny cloud-4">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud large cloud-5">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud normal cloud-6">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud small cloud-7">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud tiny cloud-8">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud small cloud-9">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud normal cloud-10">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud tiny cloud-11">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud small cloud-12">
-						<div></div><div></div><div></div><div></div>
+          <div class="col-md-3">
+            <div class="progressbar" data-animate="false">
+						<div class="circle" data-percent="65">
+							<div></div>
 						</div>
 					</div>
+          </div>
 
-					<div class="section" id="section4">
-						<div class="cloud large cloud-1">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud normal cloud-2">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud small cloud-3">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud tiny cloud-4">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud large cloud-5">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud normal cloud-6">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud small cloud-7">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud tiny cloud-8">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud small cloud-9">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud normal cloud-10">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud tiny cloud-11">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud small cloud-12">
-						<div></div><div></div><div></div><div></div>
-						</div>
+          <div class="col-md-3">
+            <img src="img/policon.png" alt="">
+          </div>
 
-					</div>
-
-					<div class="section" id="section5">
-						<div class="cloud large cloud-1">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud normal cloud-2">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud small cloud-3">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud tiny cloud-4">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud large cloud-5">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud normal cloud-6">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud small cloud-7">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud tiny cloud-8">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud small cloud-9">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud normal cloud-10">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud tiny cloud-11">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud small cloud-12">
-						<div></div><div></div><div></div><div></div>
-						</div>
-
-					</div>
-
-					<div class="section" id="section2">
-						<div class="cloud large cloud-1">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud normal cloud-2">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud small cloud-3">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud tiny cloud-4">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud large cloud-5">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud normal cloud-6">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud small cloud-7">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud tiny cloud-8">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud small cloud-9">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud normal cloud-10">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud tiny cloud-11">
-						<div></div><div></div><div></div><div></div>
-						</div>
-						<div class="cloud small cloud-12">
-						<div></div><div></div><div></div><div></div>
+          <div class="col-md-3">
+            <div class="progressbar" data-animate="false">
+						<div class="circle" data-percent="59">
+							<div></div>
 						</div>
 					</div>
+          </div>
+        </div>
 
-				</div>
-			</div>
-		</div>
-		<!-- /container -->
+        <div class="row">
+          <div class="col-md-3">
+            <img src="img/temp.png" alt="">
+          </div>
 
-	<script>
-	function myMap() {
-	var myCenter = new google.maps.LatLng(28.727394,77.126677);
-	var mapCanvas = document.getElementById("map");
-	var mapOptions = {center: myCenter, zoom: 15};
-	var map = new google.maps.Map(mapCanvas, mapOptions);
-	var marker = new google.maps.Marker({position:myCenter});
-	marker.setMap(map);
-	}
-	</script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcb8twJqzWNDvZEtZeNvp4TaMoAjo0ksQ&callback=myMap"></script>
-		<script src="js/classie.js"></script>
-		<script>
-			(function() {
+          <div class="col-md-3">
+            <div class="progressbar" data-animate="false">
+            <div class="circle" data-percent="95">
+              <div></div>
+            </div>
+          </div>
+          </div>
 
-				var ie = (function(){
-					var undef,rv = -1; // Return value assumes failure.
-					var ua = window.navigator.userAgent;
-					var msie = ua.indexOf('MSIE ');
-					var trident = ua.indexOf('Trident/');
+          <div class="col-md-3">
+            <img src="img/humidity.png" alt="">
+          </div>
 
-					if (msie > 0) {
-						// IE 10 or older => return version number
-						rv = parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
-					} else if (trident > 0) {
-						// IE 11 (or newer) => return version number
-						var rvNum = ua.indexOf('rv:');
-						rv = parseInt(ua.substring(rvNum + 3, ua.indexOf('.', rvNum)), 10);
-					}
+          <div class="col-md-3">
+            <div class="progressbar" data-animate="false">
+						<div class="circle" data-percent="55">
+							<div></div>
+						</div>
+					</div>
+          </div>
+        </div>
 
-					return ((rv > -1) ? rv : undef);
-				}());
+        <div class="row">
+          <div class="col-md-3">
+            <img src="img/carbon.png" alt="">
+          </div>
+
+          <div class="col-md-3">
+            <div class="progressbar" data-animate="false">
+						<div class="circle" data-percent="78">
+							<div></div>
+						</div>
+					</div>
+          </div>
+
+          <div class="col-md-3">
+            <img src="img/nitrogen.png" alt="">
+          </div>
+
+          <div class="col-md-3">
+            <div class="progressbar" data-animate="false">
+						<div class="circle" data-percent="75">
+							<div></div>
+						</div>
+					</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            <img src="img/sulpher.png" alt="">
+          </div>
+
+          <div class="col-md-3">
+            <div class="progressbar" data-animate="false">
+            <div class="circle" data-percent="85">
+              <div></div>
+            </div>
+          </div>
+          </div>
+
+          <div class="col-md-3">
+            <img src="img/ozone.png" alt="">
+          </div>
+
+          <div class="col-md-3">
+            <div class="progressbar" data-animate="false">
+						<div class="circle" data-percent="62">
+							<div></div>
+						</div>
+					</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="img/noise.png" alt="">
+          </div>
+
+          <div class="col-md-3">
+
+          </div>
+
+          <div class="col-md-3">
+          </div>
+
+          <div class="col-md-3">
+            <div class="progressbar" data-animate="false">
+            <div class="circle" data-percent="75">
+              <div></div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <br>
+
+        <div class="col-md-6">
+          <h5>Last Update</h5>
+        </div>
+        <div class="col-md-6">
+          <h5>17 Feb,4 PM</h5>
+        </div>
+
+      </div>
+
+      <div class="searchbar">
+        <form class="form-inline" action="/action_page.php">
+        <div class="form-group">
+        <label for="search"><i class="fa fa-search"></i></label>
+        <input type="search" class="form-control" placeholder="Search" name="search" style="width: 515px;border: none;">
+        </div>
+        <div class="form-group">
+       <select class="form-control" id="sel1" style="border:none;">
+        <option>All Cities</option>
+        <option>Ajmer</option>
+        <option>Banglore</option>
+        <option>Kota</option>
+       </select>
+      </div>
+
+        <button type="submit"  id="loginbtn" style="border-radius: 10px;">Search</button>
+        </form>
+      </div>
+
+      <div id="map" style="width:100%;height:800px;" style="position:relative;top:0"></div>
+    </section>
 
 
-				// disable/enable scroll (mousewheel and keys) from http://stackoverflow.com/a/4770179
-				// left: 37, up: 38, right: 39, down: 40,
-				// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
-				var keys = [32, 37, 38, 39, 40], wheelIter = 0;
 
-				function preventDefault(e) {
-					e = e || window.event;
-					if (e.preventDefault)
-					e.preventDefault();
-					e.returnValue = false;
-				}
+    <!-- Blog-->
+    <section id="blog" class="section-gray" style="height:1000px;">
+      <!-- clouds -->
+      <div class="cloud large cloud-1">
+      <div></div><div></div><div></div><div></div>
+      </div>
+      <div class="cloud normal cloud-2">
+      <div></div><div></div><div></div><div></div>
+      </div>
+      <div class="cloud small cloud-3">
+      <div></div><div></div><div></div><div></div>
+      </div>
+      <div class="cloud tiny cloud-4">
+      <div></div><div></div><div></div><div></div>
+      </div>
+      <div class="cloud large cloud-5">
+      <div></div><div></div><div></div><div></div>
+      </div>
+      <div class="cloud normal cloud-6">
+      <div></div><div></div><div></div><div></div>
+      </div>
+      <div class="cloud small cloud-7">
+      <div></div><div></div><div></div><div></div>
+      </div>
+      <div class="cloud tiny cloud-8">
+      <div></div><div></div><div></div><div></div>
+      </div>
+      <div class="cloud small cloud-9">
+      <div></div><div></div><div></div><div></div>
+      </div>
+      <div class="cloud normal cloud-10">
+      <div></div><div></div><div></div><div></div>
+      </div>
+      <div class="cloud tiny cloud-11">
+      <div></div><div></div><div></div><div></div>
+      </div>
+      <div class="cloud small cloud-12">
+      <div></div><div></div><div></div><div></div>
+      </div>
 
-				function keydown(e) {
-					for (var i = keys.length; i--;) {
-						if (e.keyCode === keys[i]) {
-							preventDefault(e);
-							return;
-						}
-					}
-				}
+      <div class="cloud large cloud-1">
+      <div></div><div></div><div></div><div></div>
+      </div>
+      <div class="cloud normal cloud-2">
+      <div></div><div></div><div></div><div></div>
+      </div>
+      <div class="cloud small cloud-3">
+      <div></div><div></div><div></div><div></div>
+      </div>
+      <div class="cloud tiny cloud-4">
+      <div></div><div></div><div></div><div></div>
+      </div>
 
-				function touchmove(e) {
-					preventDefault(e);
-				}
 
-				function wheel(e) {
-					// for IE
-					//if( ie ) {
-						//preventDefault(e);
-					//}
-				}
+      <!-- clouds -->
+      <div class="container clearfix">
 
-				function disable_scroll() {
-					window.onmousewheel = document.onmousewheel = wheel;
-					document.onkeydown = keydown;
-					document.body.ontouchmove = touchmove;
-				}
+        <div class="row services">
+          <div class="col-md-12" style="position:relative;top:-600px;">
 
-				function enable_scroll() {
-					window.onmousewheel = document.onmousewheel = document.onkeydown = document.body.ontouchmove = null;
-				}
+            <h2 class="heading">Air Quality Index</h2>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="box box-services">
+                  <div class="icon"> <img src="img/1.png" alt="">  </div>
+                  <h4 class="heading">Good </h4>
+                  <p><span id="loginbtn" style="background-color:green;">0-50</span></p>
+                  <p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="box box-services">
+                  <div class="icon"><img src="img/2.png" alt=""> </div>
+                  <h4 class="heading">Moderate</h4>
+                  <p><span id="loginbtn" style="background-color:orange;">51-100</span></p>
+                  <p>Advantage old had otherwise sincerity dependent additions. It in adapted natural.</p>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="box box-services">
+                  <div class="icon"><img src="img/3.png" alt=""> </div>
+                  <h4 class="heading">Unhealthy for Groups</h4>
+                  <p><span id="loginbtn" style="background-color:green;">101-150</span></p>
+                  <p>Am terminated it excellence invitation projection as. She graceful shy. </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="box box-services">
+                  <div class="icon"><img src="img/4.png" alt=""> </div>
+                  <h4 class="heading">Unhealthy</h4>
+                  <p><span id="loginbtn" style="background-color:green;">151-200</span></p>
+                  <p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="box box-services">
+                  <div class="icon"><img src="img/5.png" alt=""> </div>
+                  <h4 class="heading">Very Unhealthy</h4>
+                  <p><span id="loginbtn" style="background-color:green;">201-300</span></p>
+                  <p>Advantage old had otherwise sincerity dependent additions. It in adapted natural.</p>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="box box-services">
+                  <div class="icon"><img src="img/6.png" alt=""> </div>
+                  <h4 class="heading"> Hazardous</h4>
+                  <p><span id="loginbtn" style="background-color:red;">300+</span></p>
+                  <p>Am terminated it excellence invitation projection as. She graceful shy. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row copyright">
+          <div class="col-md-6">
+            <p class="roboto">&copy;2017-18 AQI-INDIA</p>
+          </div>
+          <div class="col-md-6">
+            <p class=" roboto"><a href="">Pure Logic Labs</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Javascript files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script>
+    function myMap() {
+    var myCenter = new google.maps.LatLng(28.727394,77.126677);
+    var mapCanvas = document.getElementById("map");
+    var mapOptions = {center: myCenter, zoom: 15};
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+    var marker = new google.maps.Marker({position:myCenter});
+    marker.setMap(map);
+    }
+    </script>
+  	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcb8twJqzWNDvZEtZeNvp4TaMoAjo0ksQ&callback=myMap"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js'></script>
+    <!-- <script src="js/gmaps.js"></script> -->
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/front.js"></script>
+    <script>
+    $(document).ready(function() {
+        setTimeout(function() {
+        $('#preloader').fadeOut('slow');
+      },1000);
 
-				var docElem = window.document.documentElement,
-					scrollVal,
-					isRevealed,
-					noscroll,
-					isAnimating,
-					container = document.getElementById( 'container' ),
-					trigger = container.querySelector( 'button.trigger' );
+      setTimeout(function() {
+      $('.overlay').fadeOut(1000);
+      $('.content').fadeOut(1000);
+      $('.livevideo').fadeIn(1000);
+      $('.livetext').fadeIn(1100);
+    },1000*5);
 
-				function scrollY() {
-					return window.pageYOffset || docElem.scrollTop;
-				}
+    function animateElements() {
+      $('.progressbar').each(function () {
+        var elementPos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        var percent = $(this).find('.circle').attr('data-percent');
+        var percentage = parseInt(percent, 10) / parseInt(100, 10);
+        var animate = $(this).data('animate');
+        if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
+          $(this).data('animate', true);
+          $(this).find('.circle').circleProgress({
+            startAngle: -Math.PI /1,
+            value: percent / 100,
+            size: 65,
+            thickness: 5,
+            emptyFill: "rgba(0,0,0, .2)",
+            fill: {
+              color: '#bf459a'
+            }
+          }).on('circle-animation-progress', function (event, progress, stepValue) {
+            $(this).find('div').text((stepValue*100).toFixed(1) + "%");
+          }).stop();
+        }
+      });
+    }
 
-				function scrollPage() {
-					scrollVal = scrollY();
+    // Show animated elements
+    animateElements();
+    $(window).scroll(animateElements);
 
-					if( noscroll && !ie ) {
-						if( scrollVal < 0 ) return false;
-						// keep it that way
-						window.scrollTo( 0, 0 );
-					}
-
-					if( classie.has( container, 'notrans' ) ) {
-						classie.remove( container, 'notrans' );
-						return false;
-					}
-
-					if( isAnimating ) {
-						return false;
-					}
-
-					if( scrollVal <= 0 && isRevealed ) {
-						toggle(0);
-					}
-					else if( scrollVal > 0 && !isRevealed ){
-						toggle(1);
-					}
-				}
-
-				function toggle( reveal ) {
-					isAnimating = true;
-
-					if( reveal ) {
-						classie.add( container, 'modify' );
-					}
-					else {
-						noscroll = true;
-						disable_scroll();
-						classie.remove( container, 'modify' );
-					}
-
-					// simulating the end of the transition:
-					setTimeout( function() {
-						isRevealed = !isRevealed;
-						isAnimating = false;
-						if( reveal ) {
-							noscroll = false;
-							enable_scroll();
-						}
-					}, 1200 );
-				}
-
-				// refreshing the page...
-				var pageScroll = scrollY();
-				noscroll = pageScroll === 0;
-
-				disable_scroll();
-
-				if( pageScroll ) {
-					isRevealed = true;
-					classie.add( container, 'notrans' );
-					classie.add( container, 'modify' );
-				}
-
-				window.addEventListener( 'scroll', scrollPage );
-				trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
-			})();
-		</script>
-		<script>
-		$(".trigger").click(function(){
-		$(".trigger").hide();
-		$("#livetext").hide();
-
-		});
-		</script>
-		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
-	</body>
+    });
+    </script>
+  </body>
 </html>
