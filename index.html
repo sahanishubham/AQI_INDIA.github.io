@@ -43,7 +43,6 @@
       <a class="" href="#" > <i class="fa fa-video-camera livetext"></i> &nbsp; <span class="livetext"> Live Stream</span></a> -->
     <!-- </section> -->
 
-
     <!-- navbar-->
     <header class="header">
       <div class="sticky-wrapper">
@@ -51,7 +50,7 @@
           <div class="container">
             <div class="navbar-header">
               <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-              <a href="#livestream" class="navbar-brand scroll-to" style="padding-top:10px;"><img src="img/AQI.png" alt="" height="35px" width="50px"></a>
+              <a href="#maps" class="navbar-brand scroll-to" style="padding-top:10px;"><img src="img/AQI.png" alt="" height="35px" width="50px"></a>
             </div>
             <div id="navigation" class="collapse navbar-collapse" >
               <ul class="nav navbar-nav navbar-right">
@@ -421,7 +420,7 @@
     var map = new google.maps.Map(mapCanvas, mapOptions);
     var marker = new google.maps.Marker({position:myCenter});
     marker.setMap(map);
-    map.setMapTypeId(google.maps.MapTypeId.TERRAIN);
+    // map.setMapTypeId(google.maps.MapTypeId.TERRAIN);
     }
     </script>
   	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcb8twJqzWNDvZEtZeNvp4TaMoAjo0ksQ&callback=myMap"></script>
@@ -437,7 +436,7 @@
 
       setTimeout(function() {
       $('.overlay').fadeOut(700);
-      // $('.content').fadeOut(700);
+      $('.content').fadeOut(700);
       $('.livevideo').fadeIn(700);
       $('.livetext').fadeIn(800);
     },1000*5);
