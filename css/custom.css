@@ -329,7 +329,7 @@ navbar-default{
   position:absolute;
   height: 700px;
   display: block;
-  width: 25%;
+  min-width: 25%;
   background: #fff;
   z-index: 9;
   text-align: center;
@@ -354,7 +354,7 @@ navbar-default{
   position: absolute;
   height: 65px;
   display: block;
-  width: 55%;
+  min-width: 55%;
   background: #fff;
   z-index: 9;
   text-align: center;
