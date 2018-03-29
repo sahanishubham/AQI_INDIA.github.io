@@ -1,5 +1,9 @@
 /* your styles go here */
 
+body{
+  overflow-x: hidden;
+}
+
 /* loader css */
 
 * {
@@ -159,7 +163,7 @@ div.spinner i:nth-child(8) {
 
 /* bouncing arrow */
 
-@-moz-keyframes bounce {
+@-moz-keyframes cbounce {
   0%, 20%, 50%, 80%, 100% {
     -moz-transform: translateY(0);
     transform: translateY(0);
@@ -173,7 +177,7 @@ div.spinner i:nth-child(8) {
     transform: translateY(-15px);
   }
 }
-@-webkit-keyframes bounce {
+@-webkit-keyframes cbounce {
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -187,7 +191,7 @@ div.spinner i:nth-child(8) {
     transform: translateY(-15px);
   }
 }
-@keyframes bounce {
+@keyframes cbounce {
   0%, 20%, 50%, 80%, 100% {
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -222,13 +226,13 @@ div.spinner i:nth-child(8) {
 
 .livevideo{
   position: relative;
-  height: 100%;
+  height: 800px;
   width: 100%;
   display: none;
   border: none;
 }
 
-.bounce {
+.cbounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
@@ -330,7 +334,7 @@ navbar-default{
   z-index: 9;
   text-align: center;
   padding: 10px;
-  top: 30px;
+  top: 40px;
   box-shadow: 13px 15px 50px -20px black;
   border-radius: 15px;
   right: 80px;
@@ -355,7 +359,7 @@ navbar-default{
   z-index: 9;
   text-align: center;
   padding: 13px;
-  top: 30px;
+  top: 40px;
   box-shadow: 13px 15px 50px -20px black;
   border-radius: 15px;
   left: 178px;
@@ -654,4 +658,40 @@ navbar-default{
     .icon img{
     width: 185px;
     height: 140px;
+    }
+
+
+      /*=====================
+      		on scroll reveal
+      	======================*/
+
+
+
+    .slideanim {visibility:hidden;}
+    .slide {
+        animation-name: slide;
+        -webkit-animation-name: slide;
+        animation-duration: 2s;
+        -webkit-animation-duration: 2s;
+        visibility: visible;
+    }
+    @keyframes slide {
+      0% {
+        opacity: 0;
+        transform: translateY(70%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+    @-webkit-keyframes slide {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+      }
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+      }
     }
