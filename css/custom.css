@@ -327,7 +327,7 @@ navbar-default{
 
   .info{
   position:absolute;
-  height: 700px;
+  height: 660px;
   display: block;
   /* max-width: 25%; */
   background: #fff;
@@ -387,7 +387,7 @@ navbar-default{
       text-align: center;
   	}
   	.circle:after {
-	    width: 120px;
+	    /* width: 120px;
   		height: 120px;
   		content: "";
   		border: none;
@@ -395,28 +395,25 @@ navbar-default{
   		display: block;
   		position: absolute;
   		top: 30px;
-  		left: 30px;
+  		left: 30px; */
   	}
 
   	.circle canvas {
   		vertical-align: middle;
   		border: none;
   		border-radius: 50%;
-      width: 150;
-      height: 150;
-
   	}
 
   	.circle div {
       position: absolute;
-      top: 19%;
-      left: 50%;
+      top: 15%;
+      left: 49%;
       margin: -20px 0 0 -86px;
       width: 100%;
-      color: mediumvioletred;
+      color: #673AB7;
       text-align: center;
       line-height: 40px;
-      font-size: 14px;
+      font-size: 12px;
 
   	}
   	.circle strong i {

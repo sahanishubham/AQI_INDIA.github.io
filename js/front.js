@@ -156,15 +156,15 @@ $(window).load(function () {
 
 
 });
-$(window).resize(function () {
-
-    newWindowWidth = $(window).width();
-
-    if (windowWidth !== newWindowWidth) {
-        setTimeout(function () {
-            $(this).alignElementsSameHeight();
-        }, 100);
-        windowWidth = newWindowWidth;
-    }
-
-});
+// $(window).resize(function () {
+//
+//     newWindowWidth = $(window).width();
+//
+//     if (windowWidth !== newWindowWidth) {
+//         setTimeout(function () {
+//             $(this).alignElementsSameHeight();
+//         }, 100);
+//         windowWidth = newWindowWidth;
+//     }
+//
+// });
