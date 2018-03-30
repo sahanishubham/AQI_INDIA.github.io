@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="css/themify-icons.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <!-- Google fonts - Roboto Condensed for headings, Open Sans for copy-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700%7COpen+Sans:300,400,700">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700%7COpen+Sans:300,400,700"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
     <!-- theme stylesheet-->
     <link rel="stylesheet" href="css/animate.css">
     <!-- theme stylesheet-->
@@ -53,16 +54,17 @@
               <a href="#maps" class="navbar-brand scroll-to" style="padding-top:10px;"><img src="img/AQI.png" alt="" height="35px" width="50px"></a>
             </div>
             <div id="navigation" class="collapse navbar-collapse" >
-              <ul class="nav navbar-nav navbar-right">
+              <ul class="nav navbar-nav navbar-right" style="font-weight:500;">
                 <li><a href="#maps">Home</a></li>
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#Resources">Resources</a></li>
                 <li><a href="#FAQ">FAQ</a></li>
                 <li><a href="#Download">Download</a></li>
                 <li><a href="#AboutUs">AboutUs</a></li>
-                <li><a href="#login"> <span id="loginbtn">Login</span></a></li>
+                <li><a href="#" id="loginredirect"> <span id="loginbtn">Login</span></a></li>
+                <li><a href="#blog" class="animated shake"> <span >Dashboard</span> </a></li>
                 <li>
-                    <li class="active"><a data-toggle="pill" href="#mapview">Map</a></li>
+                    <li class="active"><a data-toggle="pill" href="#mapview"> Map</a></li>
                     <li><a data-toggle="pill" href="#live"><i class="fa fa-video-camera" style="color:red;"></i> &nbsp; <span style="color:red;"> Live Stream</span> </a></li>
                 </li>
               </ul>
@@ -395,6 +397,7 @@
         </div>
       </div>
     </section>
+
     <footer>
       <div class="container">
         <div class="row copyright">
@@ -407,6 +410,7 @@
         </div>
       </div>
     </footer>
+
     <!-- Javascript files-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
@@ -416,7 +420,7 @@
     function myMap() {
     var myCenter = new google.maps.LatLng(28.727394,77.126677);
     var mapCanvas = document.getElementById("map");
-    var mapOptions = {center: myCenter, zoom: 15};
+    var mapOptions = {center: myCenter, zoom: 13};
     var map = new google.maps.Map(mapCanvas, mapOptions);
     var marker = new google.maps.Marker({position:myCenter});
     marker.setMap(map);
@@ -479,6 +483,11 @@
             $(this).addClass("slide");
           }
       });
+    });
+
+    //login to redirect
+    $('#loginredirect').click(function(){
+     window.location.href='login.html';
     });
     });
     </script>
