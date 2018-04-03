@@ -280,9 +280,6 @@ navbar-default{
   padding: 8px 35px;
 }
 
-
-
-
   .info{
   position: absolute;
   height: auto;
@@ -294,23 +291,13 @@ navbar-default{
   top: 40px;
   box-shadow: 13px 15px 50px -20px black;
   border-radius: 15px;
-  right: 80px;
+  /* right: 80px; */
   overflow-y: scroll;
   }
 
 .info .row{
   margin-top: 12px;
 }
-
-  /* nav bar search box - drop down menu button */
-/* .navbar .navbar-search .dropdown-menu { min-width: 25px; }
-.dropdown-menu .label-icon { margin-left: 5px; }
-.btn-outline {
-    background-color: transparent;
-    color: inherit;
-    transition: all .5s;
-} */
-
 
   .searchbar{
   position: absolute;
@@ -323,7 +310,7 @@ navbar-default{
   top: 40px;
   box-shadow: 13px 15px 50px -20px black;
   border-radius: 15px;
-  left: 178px;
+  /* left: 178px; */
   }
 
   @import url(http://fonts.googleapis.com/css?family=Montserrat);

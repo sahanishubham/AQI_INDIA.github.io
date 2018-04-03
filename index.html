@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AQI-INDIA | HOME</title>
     <meta name="description" content="">
-    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
+    <!-- <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0"> -->
     <meta name="robots" content="all,follow">
     <!-- Bootstrap and Font Awesome css-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -24,14 +24,14 @@
     <style media="screen">
       .icon{
         min-height: 130px;
-
       }
     </style>
   </head>
   <body data-spy="scroll" data-target="#navigation" data-offset="120">
+
     <!-- navbar-->
     <header class="header">
-      <div class="sticky-wrapper">
+      <div class="">
         <div role="navigation" class="navbar navbar-default" style="box-shadow:0px 0px 15px -4px black;padding:5px;">
           <div class="container">
             <div class="navbar-header">
@@ -47,7 +47,7 @@
                 <li><a href="#Download">Download</a></li>
                 <li><a href="#AboutUs">AboutUs</a></li>
                 <li><a href="#" id="loginredirect"> <span id="loginbtn">Login</span></a></li>
-                <li><a href="#blog" class=""> <span >Ranking</span> </a></li>
+                <li><a href="ranking.html" class=""> <span id="rankingbtn" >Ranking</span> </a></li>
                 <li>
                     <li class="active"><a data-toggle="pill" href="#mapview"> Map</a></li>
                     <li><a data-toggle="pill" href="#live"><i class="fa fa-video-camera" style="color:red;"></i> &nbsp; <span style="color:red;"> Live Stream</span> </a></li>
@@ -60,8 +60,9 @@
     </header>
     <!-- /.navbar-->
 
-    <!-- Maps-->
+    <!-- Google Maps-->
     <section id="maps" style="padding-top:0px;padding-bottom:0px;">
+
       <!-- loader start -->
       <div id="preloader" style="height:1000px;">
         <br><br><br><br><br><br><br><br><br><br><br><br>
@@ -76,18 +77,20 @@
          <i></i>
        </div>
       </div>
+      <!-- loader end -->
 
     <div class="tab-content">
       <div id="mapview" class="tab-pane fade in ">
         <div id="map" style="width:100%;height:800px;" style="position:relative;top:0"></div>
       </div>
       <div id="live" class="tab-pane fade active">
-        <iframe src="https://g0.ipcamlive.com/player/player.php?alias=5a8f1fc3b4e64&autoplay=1" class="livevideo"></iframe>
+        <!-- <iframe src="https://g0.ipcamlive.com/player/player.php?alias=5a8f1fc3b4e64&autoplay=1" class="livevideo"></iframe> -->
       </div>
     </div>
+<div class="container-fluid">
 
-
-      <div class="info container-fluid col-md-3 animated fadeIn">
+    <!-- info start -->
+      <div class="info col-md-3 col-md-offset-8 animated fadeIn">
         <div class="row">
           <div class="col-md-6">
             <div class="row" style="color: #00BCD4;">
@@ -123,7 +126,6 @@
           <div class="col-md-3">
             <img src="img/smoke.png" alt="">
             <p>PM : 10</p>
-
           </div>
 
           <div class="col-md-3">
@@ -153,7 +155,6 @@
           <div class="col-md-3">
             <img src="img/drop.png" alt="">
             <p>Humidity</p>
-
           </div>
 
           <div class="col-md-3">
@@ -169,7 +170,6 @@
           <div class="col-md-3">
             <img src="img/cloud.png" alt="">
             <p>Carbon Monooxide</p>
-
           </div>
 
           <div class="col-md-3">
@@ -183,7 +183,6 @@
           <div class="col-md-3">
             <img src="img/cloud.png" alt="">
             <p>Carbon dioxide</p>
-
           </div>
 
           <div class="col-md-3">
@@ -199,7 +198,6 @@
           <div class="col-md-3">
             <img src="img/cloud.png" alt="">
             <p>Sulpher dioxide</p>
-
           </div>
 
           <div class="col-md-3">
@@ -213,7 +211,6 @@
           <div class="col-md-3">
             <img src="img/cloud.png" alt="">
             <p>Ozone</p>
-
           </div>
 
           <div class="col-md-3">
@@ -228,11 +225,9 @@
           <div class="col-md-3">
             <img src="img/sound.png" alt="">
             <p>Noise</p>
-
           </div>
 
           <div class="col-md-3">
-
           </div>
 
           <div class="col-md-3">
@@ -254,14 +249,15 @@
         <div class="col-md-6">
           <h5>17 Feb,4 PM</h5>
         </div>
-
       </div>
+      <!-- info end -->
 
-      <div class="searchbar col-md-6 animated fadeInDown container-fluid" style="width:auto;">
+      <!-- search bar start-->
+      <div class="searchbar col-md-6 animated fadeInDown container-fluid col-md-offset-1" style="width:auto;">
         <form class="form-inline" action="/action_page.php">
         <div class="form-group">
         <label for="search"><i class="fa fa-search"></i></label>
-        <input type="search" class="form-control" placeholder="Search" name="search" style="border: none;">
+        <input type="search" class="form-control" placeholder="Search" name="search" style="border:none;min-width:420px;">
         </div>
         <div class="form-group">
        <select class="form-control" id="sel1" style="border:none;">
@@ -274,14 +270,18 @@
         <button type="submit"  id="loginbtn" style="border-radius: 10px;">Search</button>
         </form>
       </div>
+      <!-- search bar end-->
+    </div>
+
     <center>  <a href="#blog" class="animated scroll-to"> <i class="fa fa-angle-double-down icon animated  cbounce"style="font-size: 70px;text-align: center;position: absolute;bottom: 100px;color:#42abe1;"></i></a></center>
     </section>
-
+    <!-- google map end -->
 
 
     <!-- Blog-->
     <section id="blog" class="section-gray">
-      <!-- clouds -->
+
+      <!-- clouds start -->
       <!-- <div class="cloud large cloud-1">
       <div></div><div></div><div></div><div></div>
       </div>
@@ -330,14 +330,11 @@
       <div class="cloud tiny cloud-4">
       <div></div><div></div><div></div><div></div>
       </div> -->
+      <!-- clouds end -->
 
-
-      <!-- clouds -->
       <div class="container clearfix">
-
         <div class="row services">
           <div class="col-md-12" >
-
             <h3 class="heading">Air Quality Index</h3>
             <div class="row">
               <div class="col-sm-4 slideanim">
@@ -395,7 +392,9 @@
         </div>
       </div>
     </section>
+    <!-- blog end -->
 
+    <!-- footer start -->
     <footer>
       <div class="container">
         <div class="row copyright">
@@ -408,6 +407,7 @@
         </div>
       </div>
     </footer>
+    <!-- footer start -->
 
     <!-- Javascript files-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -422,13 +422,10 @@
     var map = new google.maps.Map(mapCanvas, mapOptions);
     var marker = new google.maps.Marker({position:myCenter});
     marker.setMap(map);
-    // map.setMapTypeId(google.maps.MapTypeId.TERRAIN);
     }
     </script>
   	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcb8twJqzWNDvZEtZeNvp4TaMoAjo0ksQ&callback=myMap"></script>
-
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js'></script>
-    <!-- <script src="js/gmaps.js"></script> -->
     <script src="js/jquery.cookie.js"></script>
     <script src="js/front.js"></script>
     <script>
@@ -436,12 +433,6 @@
         setTimeout(function() {
         $('#preloader').fadeOut('slow');
       },1000);
-
-      setTimeout(function() {
-      $('.overlay').fadeOut(700);
-      $('.content').fadeOut(700);
-      $('.livevideo').fadeIn(700);
-    },1000*5);
 
     function animateElements() {
       $('.progressbar').each(function () {
@@ -482,9 +473,15 @@
           }
       });
     });
+
     $('#loginredirect').click(function(){
      window.location.href='login.html';
     });
+
+    $('#rankingbtn').click(function(){
+     window.location.href='ranking.html';
+    });
+
     });
     </script>
   </body>
