@@ -189,6 +189,165 @@ $(document).ready(function () {
         }
     });
 
+    // ------------------------------------------------------- //
+    // Pie Chart
+    // ------------------------------------------------------ //
+    var PIECHART = $('#pieChart1');
+    var myPieChart = new Chart(PIECHART, {
+        type: 'doughnut',
+        options: {
+            cutoutPercentage: 80,
+            legend: {
+                display: false
+            }
+        },
+        data: {
+            labels: [
+                "First",
+                "Second",
+                "Third",
+                "Fourth"
+            ],
+            datasets: [
+                {
+                    data: [300, 50, 100, 60],
+                    borderWidth: [0, 0, 0, 0],
+                    backgroundColor: [
+                      "#ec7551",
+                      "#54e69d",
+                      "#42abe1",
+                      "#ffc36d"
+                    ],
+                    hoverBackgroundColor: [
+                      "#ec7551",
+                      "#54e69d",
+                      "#42abe1",
+                      "#ffc36d"
+                    ]
+                }]
+        }
+    });
+
+    // ------------------------------------------------------- //
+    // Pie Chart
+    // ------------------------------------------------------ //
+    var PIECHART = $('#pieChart2');
+    var myPieChart = new Chart(PIECHART, {
+        type: 'doughnut',
+        options: {
+            cutoutPercentage: 80,
+            legend: {
+                display: false
+            }
+        },
+        data: {
+            labels: [
+                "First",
+                "Second",
+                "Third",
+                "Fourth"
+            ],
+            datasets: [
+                {
+                    data: [300, 50, 100, 60],
+                    borderWidth: [0, 0, 0, 0],
+                    backgroundColor: [
+                      "#ec7551",
+                      "#42abe1",
+                      "#54e69d",
+                      "#ffc36d"
+                    ],
+                    hoverBackgroundColor: [
+                      "#ec7551",
+                      "#42abe1",
+                      "#54e69d",
+                      "#ffc36d"
+                    ]
+                }]
+        }
+    });
+
+    // ------------------------------------------------------- //
+    // Pie Chart
+    // ------------------------------------------------------ //
+    var PIECHART = $('#pieChart3');
+    var myPieChart = new Chart(PIECHART, {
+        type: 'doughnut',
+        options: {
+            cutoutPercentage: 80,
+            legend: {
+                display: false
+            }
+        },
+        data: {
+            labels: [
+                "First",
+                "Second",
+                "Third",
+                "Fourth"
+            ],
+            datasets: [
+                {
+                    data: [300, 50, 100, 60],
+                    borderWidth: [0, 0, 0, 0],
+                    backgroundColor: [
+                      "#ffc36d",
+                      "#ec7551",
+                      "#42abe1",
+                      "#54e69d"
+                    ],
+                    hoverBackgroundColor: [
+                      "#ffc36d",
+                      "#ec7551",
+                      "#42abe1",
+                      "#54e69d"
+                    ]
+                }]
+        }
+    });
+
+    // ------------------------------------------------------- //
+    // Pie Chart
+    // ------------------------------------------------------ //
+    var PIECHART = $('#pieChart4');
+    var myPieChart = new Chart(PIECHART, {
+        type: 'doughnut',
+        options: {
+            cutoutPercentage: 80,
+            legend: {
+                display: false
+            }
+        },
+        data: {
+            labels: [
+                "First",
+                "Second",
+                "Third",
+                "Fourth"
+            ],
+            datasets: [
+                {
+                    data: [300, 50, 100, 60],
+                    borderWidth: [0, 0, 0, 0],
+                    backgroundColor: [
+                      "#ffc36d",
+                      "#42abe1",
+                      "#54e69d",
+                      "#ec7551"
+
+                    ],
+                    hoverBackgroundColor: [
+                      "#ffc36d",
+                      "#42abe1",
+                      "#54e69d",
+                      "#ec7551"
+                    ]
+                }]
+        }
+    });
+
+
+
 
     // ------------------------------------------------------- //
     // Bar Chart

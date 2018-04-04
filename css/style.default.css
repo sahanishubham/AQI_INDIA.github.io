@@ -1562,9 +1562,11 @@ section.charts div[class*="col-"] {
 * ==========================================================
 */
 .polar-chart-example canvas {
-  max-width: 350px;
-  max-height: 350px;
+  /* max-width: 350px;
+  max-height: 350px; */
   margin: 20px auto;
+  max-width: 620px;
+  max-height: 450px;
 }
 
 /*
@@ -1573,9 +1575,11 @@ section.charts div[class*="col-"] {
 * ==========================================================
 */
 .pie-chart-example canvas {
-  max-width: 350px;
-  max-height: 350px;
-  margin: 15px auto;
+  /* max-width: 350px;
+  max-height: 350px; */
+margin: 15px auto;
+max-width: 620px;
+max-height: 450px;
 }
 
 /*
@@ -1584,9 +1588,11 @@ section.charts div[class*="col-"] {
 * ==========================================================
 */
 .radar-chart-example canvas {
-  max-width: 350px;
-  max-height: 350px;
+  /* max-width: 350px;
+  max-height: 350px; */
   margin: 20px auto;
+  max-width: 620px;
+  max-height: 450px;
 }
 
 /* FORMS MEDIAQUERIES -------------------------- */

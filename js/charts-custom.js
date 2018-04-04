@@ -44,7 +44,7 @@ $(document).ready(function () {
             labels: ["January", "February", "March", "April", "May", "June", "July"],
             datasets: [
                 {
-                    label: "Data Set One",
+                    label: "Lowest AQI",
                     fill: true,
                     lineTension: 0.3,
                     backgroundColor: gradient1,
@@ -67,7 +67,7 @@ $(document).ready(function () {
                     spanGaps: false
                 },
                 {
-                    label: "Data Set Two",
+                    label: "Highest AQI",
                     fill: true,
                     lineTension: 0.3,
                     backgroundColor: gradient2,
@@ -105,26 +105,27 @@ $(document).ready(function () {
         },
         data: {
             labels: [
-                "A",
-                "B",
-                "C",
-                "D"
+                "Railway Station",
+                "New Market",
+                "Adam Beach",
+                "Loyala Garden"
             ],
             datasets: [
                 {
                     data: [250, 50, 100, 40],
                     borderWidth: 0,
                     backgroundColor: [
-                        '#3eb579',
-                        '#49cd8b',
-                        "#54e69d",
-                        "#71e9ad"
+                      "#ec7551",
+                      "#54e69d",
+                      "#42abe1",
+                      "#ffc36d"
                     ],
                     hoverBackgroundColor: [
-                        '#3eb579',
-                        '#49cd8b',
-                        "#54e69d",
-                        "#71e9ad"
+                      "#ec7551",
+                      "#54e69d",
+                      "#42abe1",
+                      "#ff7676",
+                      "#ffc36d"
                     ]
                 }]
             }
@@ -166,10 +167,10 @@ $(document).ready(function () {
             }
         },
         data: {
-            labels: ["A", "B", "C", "D", "E", "F", "G"],
+            labels:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
             datasets: [
                 {
-                    label: "Total Overdue",
+                    label: "AQI Levels",
                     fill: true,
                     lineTension: 0,
                     backgroundColor: "transparent",
@@ -228,10 +229,10 @@ $(document).ready(function () {
             }
         },
         data: {
-            labels: ["A", "B", "C", "D", "E", "F", "G"],
+            labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
             datasets: [
                 {
-                    label: "Total Overdue",
+                    label: "AQI Levels",
                     fill: true,
                     lineTension: 0,
                     backgroundColor: "transparent",
@@ -266,10 +267,10 @@ $(document).ready(function () {
         type: 'pie',
         data: {
             labels: [
-                "A",
-                "B",
-                "C",
-                "D"
+                "East Zone",
+                "West Zone",
+                "North Zone",
+                "South Zone"
             ],
             datasets: [
                 {
@@ -562,20 +563,20 @@ $(document).ready(function () {
                     7
                 ],
                 backgroundColor: [
-                    "#e05f5f",
-                    "#e96a6a",
+                    "#ec7551",
+                    "#54e69d",
+                    "#42abe1",
                     "#ff7676",
-                    "#ff8b8b",
-                    "#fc9d9d"
+                    "#ffc36d"
                 ],
                 label: 'My dataset' // for legend
             }],
             labels: [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E"
+                "Sulpher",
+                "Carbon Monoxide",
+                "Temprature",
+                "PM",
+                "Humidity"
             ]
         }
     });
@@ -592,10 +593,10 @@ $(document).ready(function () {
     var radarChartExample = new Chart(RADARCHARTEXMPLE, {
         type: 'radar',
         data: {
-            labels: ["A", "B", "C", "D", "E", "C"],
+            labels: ["", "Sector D", " Sector C", " Sector K ", " Sector E", " Sector M"],
             datasets: [
                 {
-                    label: "First dataset",
+                    label: "Less Polluated",
                     backgroundColor: "rgba(84, 230, 157, 0.4)",
                     borderWidth: 2,
                     borderColor: "rgba(75, 204, 140, 1)",
@@ -606,7 +607,7 @@ $(document).ready(function () {
                     data: [65, 59, 90, 81, 56, 55]
                 },
                 {
-                    label: "Second dataset",
+                    label: "Most Polluated",
                     backgroundColor: "rgba(255, 119, 119, 0.4)",
                     borderWidth: 2,
                     borderColor: "rgba(255, 119, 119, 1)",
