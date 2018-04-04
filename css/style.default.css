@@ -1,5 +1,6 @@
 body {
   overflow-x: hidden;
+
 }
 
 a,
@@ -20,7 +21,7 @@ span:focus {
 }
 
 section {
-  padding: 50px 0;
+  /* padding: 50px 0; */
 }
 
 canvas {
@@ -1878,10 +1879,10 @@ select option {
   height: 100%;
   display: block;
   z-index: -1;
-  background: url(../img/bg.png);
+  background: url(../img/bg.jpg);
   background-size: cover;
   -webkit-filter: blur(10px);
-  filter: blur(10px);
+  filter: blur(3px);
   z-index: 1;
   position: absolute;
   top: 0;
