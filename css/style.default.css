@@ -964,6 +964,7 @@ section.dashboard-counts .number strong {
 section.dashboard-counts .row {
   padding: 30px 15px;
   margin: 0;
+  border-radius: 10px;
 }
 
 section.dashboard-counts div[class*='col-'] .item {
@@ -996,6 +997,7 @@ section.dashboard-counts div[class*='col-']:last-of-type .item {
 .statistic {
   padding: 20px 15px;
   margin-bottom: 15px;
+  border-radius: 10px;
 }
 
 .statistic:last-of-type {
@@ -1052,6 +1054,7 @@ section.dashboard-counts div[class*='col-']:last-of-type .item {
 
 .chart .bar-chart {
   margin-bottom: 15px;
+  border-radius: 10px;
 }
 
 .chart .bar-chart canvas {
@@ -1076,6 +1079,7 @@ section.dashboard-counts div[class*='col-']:last-of-type .item {
   margin: 0;
   padding: 15px 0;
   margin-bottom: 15px;
+  border-radius: 10px;
 }
 
 .project div[class*='col-'] {
