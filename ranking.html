@@ -90,6 +90,9 @@
     text-align: left;
     right: 0px;
   }
+  header{
+    cursor: pointer;
+  }
     </style>
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -100,13 +103,6 @@
       <!-- Main Navbar-->
       <header class="header">
         <nav class="navbar">
-          <!-- Search Box-->
-          <div class="search-box">
-            <button class="dismiss"><i class="icon-close"></i></button>
-            <form id="searchForm" action="#" role="search">
-              <input type="search" placeholder="What are you looking for..." class="form-control">
-            </form>
-          </div>
           <div class="container-fluid">
             <div class="navbar-holder d-flex align-items-center justify-content-between">
               <!-- Navbar Header-->
@@ -141,91 +137,75 @@
               <h2 class="no-margin-bottom">State AQI Ranking </h2>
             </div>
           </header> -->
-          <br><br>
           <div>
             <div id="map" style="width:100%;height:800px;"></div>
-
-            <!-- <div class="bar-chart-example card" style="min-height: 590px;">
-              <div class="card-close">
-                <div class="dropdown">
-                  <button type="button" id="closeCard6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
-                  <div aria-labelledby="closeCard6" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a></div>
-                </div>
-              </div>
-              <div class="card-header d-flex align-items-center">
-                <h3 class="h4"> State AQI Ranking </h3>
-              </div>
-              <div class="card-body" style="height:850px;">
-                <div id="map" style="width:100%;height:800px;" style="position:relative;top:0"></div>
-              </div>
-            </div> -->
           </div>
           <br><br>
-            <section class="charts">
+            <section>
               <div class="container-fluid">
                 <div class="row">
-            <!-- Bar Charts-->
-            <div class="col-lg-4">
-              <div class="bar-chart-example card no-margin-bottom">
-                <div class="card-close">
-                  <div class="dropdown">
-                    <button type="button" id="closeCard4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
-                    <div aria-labelledby="closeCard4" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a></div>
+                  <!-- Bar Charts-->
+                  <div class="col-lg-4">
+                    <div class="bar-chart-example card no-margin-bottom">
+                      <div class="card-close">
+                        <div class="dropdown">
+                          <button type="button" id="closeCard4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
+                          <div aria-labelledby="closeCard4" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a></div>
+                        </div>
+                      </div>
+                      <div class="card-header d-flex align-items-center">
+                        <h3 class="h4">Most Polluated Cities in <strong style="color:skyblue;">Maharasta </strong></h3>
+                      </div>
+                      <div class="card-body">
+                        <canvas id="barChart1"></canvas>
+                      </div>
+                      <div class="card-footer d-flex align-items-center">
+                        <h3 class="h4">Less Polluated Cities in <strong  style="color:#4eb97a;">Maharasta </strong></h3>
+                      </div>
+                    </div>
+                    <div class="line-chart-example card">
+                      <div class="card-close">
+                        <div class="dropdown">
+                          <button type="button" id="closeCard5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
+                          <div aria-labelledby="closeCard5" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a></div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <canvas id="barChart2"></canvas>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="card-header d-flex align-items-center">
-                  <h3 class="h4">Most Polluated Cities in <strong style="color:skyblue;">Maharasta </strong></h3>
-                </div>
-                <div class="card-body">
-                  <canvas id="barChart1"></canvas>
-                </div>
-                <div class="card-footer d-flex align-items-center">
-                  <h3 class="h4">Less Polluated Cities in <strong  style="color:#4eb97a;">Maharasta </strong></h3>
-                </div>
-              </div>
-              <div class="line-chart-example card">
-                <div class="card-close">
-                  <div class="dropdown">
-                    <button type="button" id="closeCard5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
-                    <div aria-labelledby="closeCard5" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a></div>
+                  <div class="col-lg-8">
+                    <div class="bar-chart-example card" style="min-height: 590px;">
+                      <div class="card-close">
+                        <div class="dropdown">
+                          <button type="button" id="closeCard6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
+                          <div aria-labelledby="closeCard6" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a></div>
+                        </div>
+                      </div>
+                      <div class="card-header d-flex align-items-center">
+                        <h3 class="h4"> <span style="color:#f07d7c">Most</span> / <span style="color:#74ba99">Less</span> Polluated States</h3>
+                      </div>
+                      <div class="card-body">
+                        <canvas id="barChartExample"></canvas>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="card-body">
-                  <canvas id="barChart2"></canvas>
-                </div>
-              </div>
+               </div>
             </div>
-            <div class="col-lg-8">
-              <div class="bar-chart-example card" style="min-height: 590px;">
-                <div class="card-close">
-                  <div class="dropdown">
-                    <button type="button" id="closeCard6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
-                    <div aria-labelledby="closeCard6" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a></div>
-                  </div>
-                </div>
-                <div class="card-header d-flex align-items-center">
-                  <h3 class="h4"> <span style="color:#f07d7c">Most</span> / <span style="color:#74ba99">Less</span> Polluated States</h3>
-                </div>
-                <div class="card-body">
-                  <canvas id="barChartExample"></canvas>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
           </section>
 
-          <header class="page-header">
+          <header class="page-header" data-toggle="collapse" data-target="#Live">
             <div class="container-fluid">
               <h2 class="no-margin-bottom"> Live Update</h2>
             </div>
           </header>
           <br><br>
 
-          <section class="client no-padding-top">
+          <section class="client no-padding-top collapse" id="Live">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-lg-3 slideanim">
+                <div class="col-lg-3 ">
                   <div class="work-amount card">
                     <div class="card-close">
                       <div class="dropdown">
@@ -243,7 +223,7 @@
                   </div>
                 </div>
 
-                <div class="col-lg-3 slideanim">
+                <div class="col-lg-3 ">
                   <div class="work-amount card">
                     <div class="card-close">
                       <div class="dropdown">
@@ -261,7 +241,7 @@
                   </div>
                 </div>
 
-                <div class="col-lg-3 slideanim">
+                <div class="col-lg-3 ">
                   <div class="work-amount card">
                     <div class="card-close">
                       <div class="dropdown">
@@ -279,7 +259,7 @@
                   </div>
                 </div>
 
-                <div class="col-lg-3 slideanim">
+                <div class="col-lg-3 ">
                   <div class="work-amount card">
                     <div class="card-close">
                       <div class="dropdown">
@@ -301,7 +281,7 @@
               </div>
               <div class="row">
                 <!-- Work Amount  -->
-                <div class="col-lg-4 slideanim">
+                <div class="col-lg-4 ">
                   <div class="work-amount card">
                     <div class="card-close">
                       <div class="dropdown">
@@ -321,7 +301,7 @@
 
                 <div class="col-md-8">
                   <!-- Project-->
-                  <div class="project slideanim">
+                  <div class="project ">
                     <div class="row bg-white has-shadow">
                       <div class="left-col col-lg-6 d-flex align-items-center justify-content-between">
                         <div class="project-title d-flex align-items-center">
@@ -344,7 +324,7 @@
                     </div>
                   </div>
                   <!-- Project-->
-                  <div class="project slideanim">
+                  <div class="project ">
                     <div class="row bg-white has-shadow">
                       <div class="left-col col-lg-6 d-flex align-items-center justify-content-between">
                         <div class="project-title d-flex align-items-center">
@@ -369,7 +349,7 @@
                     </div>
                   </div>
                   <!-- Project-->
-                  <div class="project slideanim">
+                  <div class="project ">
                     <div class="row bg-white has-shadow">
                       <div class="left-col col-lg-6 d-flex align-items-center justify-content-between">
                         <div class="project-title d-flex align-items-center">
@@ -394,7 +374,7 @@
                     </div>
                   </div>
                   <!-- Project-->
-                  <div class="project slideanim">
+                  <div class="project ">
                     <div class="row bg-white has-shadow">
                       <div class="left-col col-lg-6 d-flex align-items-center justify-content-between">
                         <div class="project-title d-flex align-items-center">
@@ -423,7 +403,7 @@
               </div>
             </section>
 
-            <header class="page-header">
+            <header class="page-header" data-toggle="collapse" data-target="#Weekly">
               <div class="container-fluid">
                 <h2 class="no-margin-bottom">Overall Weekly Highest AQI</h2>
               </div>
@@ -431,14 +411,12 @@
             <br><br>
 
             <!-- Dashboard Header Section    -->
-            <section class="dashboard-header">
+            <section class="dashboard-header collapse" id="Weekly">
               <div class="container-fluid">
-
-
                 <div class="row">
                   <!-- Line Chart            -->
                   <!-- Recent Updates-->
-                  <div class="col-lg-4 slideanim">
+                  <div class="col-lg-4 ">
                     <div class="recent-updates card">
                       <div class="card-close">
                         <div class="dropdown">
@@ -510,7 +488,7 @@
                   </div>
 
                   <!-- Statistics -->
-                  <div class="statistics col-lg-4 col-12 slideanim">
+                  <div class="statistics col-lg-4 col-12 ">
                     <div class="statistic d-flex align-items-center bg-white has-shadow">
                       <div class="icon bg-red"><i class="fa fa-cloud"></i></div>
                       <div class="text"><strong>24%</strong><br><small>Sulpher</small></div>
@@ -536,14 +514,14 @@
 
                   </div>
 
-                  <div class="chart col-lg-4 col-12 slideanim">
+                  <div class="chart col-lg-4 col-12 ">
                     <!-- Bar Chart   -->
                     <div class="bar-chart has-shadow bg-white">
                       <div class="title"><strong class="text-violet">AQI - 95%</strong><br><small></small></div>
                       <canvas id="barChartHome"></canvas>
                     </div>
                     <!-- Numbers-->
-                    <div class="statistic d-flex align-items-center bg-white has-shadow slideanim">
+                    <div class="statistic d-flex align-items-center bg-white has-shadow ">
                       <div class="icon bg-green"><i class="fa fa-line-chart"></i></div>
                       <div class="text"><strong>69.9%</strong><br><small>Good AQI</small></div>
                     </div>
@@ -552,18 +530,18 @@
               </div>
             </section>
 
-            <header class="page-header">
+            <header class="page-header" data-toggle="collapse" data-target="#Monthly">
               <div class="container-fluid">
                 <h2 class="no-margin-bottom"> Monthly Statics</h2>
               </div>
             </header>
             <br><br>
 
-            <section class="charts">
+            <section class="charts collapse" id="Monthly">
               <div class="container-fluid">
                 <div class="row">
                   <!-- Line Charts-->
-                  <div class="col-lg-8  slideanim">
+                  <div class="col-lg-8  ">
                     <div class="line-chart-example card">
                       <div class="card-close">
                         <div class="dropdown">
@@ -579,7 +557,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-4 slideanim">
+                  <div class="col-lg-4 ">
                     <div class="line-chart-example card no-margin-bottom">
                       <div class="card-close">
                         <div class="dropdown">
@@ -612,125 +590,127 @@
                   </div>
                 </div>
               </div>
-            </section>
 
-            <!-- Dashboard Counts Section-->
-            <section class="dashboard-counts no-padding-bottom">
-              <div class="container-fluid">
-                <h1 class="text-center">Overall Monthly Highest AQI</h1><br>
-                <div class="row bg-white has-shadow slideanim">
-                  <!-- Item -->
-                  <div class="col-xl-3 col-sm-6">
-                    <div class="item d-flex align-items-center">
-                      <div class="icon bg-violet"><i class="fa fa-industry"></i></div>
-                      <div class="title"><span>PM :</span>
-                        <div class="progress">
-                          <div role="progressbar" style="width: 25%; height: 4px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-violet"></div>
+              <!-- Dashboard Counts Section-->
+              <section class="dashboard-counts no-padding-bottom">
+                <div class="container-fluid">
+                  <h1 class="text-center">Overall Monthly Highest AQI</h1><br>
+                  <div class="row bg-white has-shadow ">
+                    <!-- Item -->
+                    <div class="col-xl-3 col-sm-6">
+                      <div class="item d-flex align-items-center">
+                        <div class="icon bg-violet"><i class="fa fa-industry"></i></div>
+                        <div class="title"><span>PM :</span>
+                          <div class="progress">
+                            <div role="progressbar" style="width: 25%; height: 4px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-violet"></div>
+                          </div>
                         </div>
+                        <div class="number"><strong>25</strong></div>
                       </div>
-                      <div class="number"><strong>25</strong></div>
                     </div>
-                  </div>
-                  <!-- Item -->
-                  <div class="col-xl-3 col-sm-6">
-                    <div class="item d-flex align-items-center">
-                      <div class="icon bg-red"><i class="fa fa-industry"></i></div>
-                      <div class="title"><span>PM :</span>
-                        <div class="progress">
-                          <div role="progressbar" style="width: 70%; height: 4px;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-red"></div>
+                    <!-- Item -->
+                    <div class="col-xl-3 col-sm-6">
+                      <div class="item d-flex align-items-center">
+                        <div class="icon bg-red"><i class="fa fa-industry"></i></div>
+                        <div class="title"><span>PM :</span>
+                          <div class="progress">
+                            <div role="progressbar" style="width: 70%; height: 4px;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-red"></div>
+                          </div>
                         </div>
+                        <div class="number"><strong>70</strong></div>
                       </div>
-                      <div class="number"><strong>70</strong></div>
                     </div>
-                  </div>
-                  <!-- Item -->
-                  <div class="col-xl-3 col-sm-6">
-                    <div class="item d-flex align-items-center">
-                      <div class="icon bg-green"><i class="fa fa-thermometer-three-quarters"></i></div>
-                      <div class="title">Temprature</span>
-                        <div class="progress">
-                          <div role="progressbar" style="width: 40%; height: 4px;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-green"></div>
+                    <!-- Item -->
+                    <div class="col-xl-3 col-sm-6">
+                      <div class="item d-flex align-items-center">
+                        <div class="icon bg-green"><i class="fa fa-thermometer-three-quarters"></i></div>
+                        <div class="title">Temprature</span>
+                          <div class="progress">
+                            <div role="progressbar" style="width: 40%; height: 4px;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-green"></div>
+                          </div>
                         </div>
+                        <div class="number"><strong>40</strong></div>
                       </div>
-                      <div class="number"><strong>40</strong></div>
                     </div>
-                  </div>
-                  <!-- Item -->
-                  <div class="col-xl-3 col-sm-6">
-                    <div class="item d-flex align-items-center">
-                      <div class="icon bg-red"><i class="fa fa-tint"></i></div>
-                      <div class="title"><span>Humidity :</span>
-                        <div class="progress">
-                          <div role="progressbar" style="width: 70%; height: 4px;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-red"></div>
+                    <!-- Item -->
+                    <div class="col-xl-3 col-sm-6">
+                      <div class="item d-flex align-items-center">
+                        <div class="icon bg-red"><i class="fa fa-tint"></i></div>
+                        <div class="title"><span>Humidity :</span>
+                          <div class="progress">
+                            <div role="progressbar" style="width: 70%; height: 4px;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-red"></div>
+                          </div>
                         </div>
+                        <div class="number"><strong>70</strong></div>
                       </div>
-                      <div class="number"><strong>70</strong></div>
                     </div>
-                  </div>
-                  <!-- Item -->
-                  <div class="col-xl-3 col-sm-6">
-                    <div class="item d-flex align-items-center">
-                      <div class="icon bg-violet"><i class="fa fa-cloud"></i></div>
-                      <div class="title"><span>Carbon dioxide</span>
-                        <div class="progress">
-                          <div role="progressbar" style="width: 25%; height: 4px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-violet"></div>
+                    <!-- Item -->
+                    <div class="col-xl-3 col-sm-6">
+                      <div class="item d-flex align-items-center">
+                        <div class="icon bg-violet"><i class="fa fa-cloud"></i></div>
+                        <div class="title"><span>Carbon dioxide</span>
+                          <div class="progress">
+                            <div role="progressbar" style="width: 25%; height: 4px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-violet"></div>
+                          </div>
                         </div>
+                        <div class="number"><strong>25</strong></div>
                       </div>
-                      <div class="number"><strong>25</strong></div>
                     </div>
-                  </div>
-                  <!-- Item -->
-                  <div class="col-xl-3 col-sm-6">
-                    <div class="item d-flex align-items-center">
-                      <div class="icon bg-orange"><i class="fa fa-cloud"></i></div>
-                      <div class="title"><span>Carbon monoxide</span>
-                        <div class="progress">
-                          <div role="progressbar" style="width: 50%; height: 4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-orange"></div>
+                    <!-- Item -->
+                    <div class="col-xl-3 col-sm-6">
+                      <div class="item d-flex align-items-center">
+                        <div class="icon bg-orange"><i class="fa fa-cloud"></i></div>
+                        <div class="title"><span>Carbon monoxide</span>
+                          <div class="progress">
+                            <div role="progressbar" style="width: 50%; height: 4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-orange"></div>
+                          </div>
                         </div>
+                        <div class="number"><strong>50</strong></div>
                       </div>
-                      <div class="number"><strong>50</strong></div>
                     </div>
-                  </div>
-                  <!-- Item -->
-                  <div class="col-xl-3 col-sm-6">
-                    <div class="item d-flex align-items-center">
-                      <div class="icon bg-red"><i class="fa fa-cloud"></i></div>
-                      <div class="title"><span>Sulpher:</span>
-                        <div class="progress">
-                          <div role="progressbar" style="width: 70%; height: 4px;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-red"></div>
+                    <!-- Item -->
+                    <div class="col-xl-3 col-sm-6">
+                      <div class="item d-flex align-items-center">
+                        <div class="icon bg-red"><i class="fa fa-cloud"></i></div>
+                        <div class="title"><span>Sulpher:</span>
+                          <div class="progress">
+                            <div role="progressbar" style="width: 70%; height: 4px;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-red"></div>
+                          </div>
                         </div>
+                        <div class="number"><strong>70</strong></div>
                       </div>
-                      <div class="number"><strong>70</strong></div>
                     </div>
-                  </div>
-                  <!-- Item -->
-                  <div class="col-xl-3 col-sm-6">
-                    <div class="item d-flex align-items-center">
-                      <div class="icon bg-green"><i class="fa fa-mixcloud"></i></div>
-                      <div class="title"><span>Ozone<br></span>
-                        <div class="progress">
-                          <div role="progressbar" style="width: 40%; height: 4px;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-green"></div>
+                    <!-- Item -->
+                    <div class="col-xl-3 col-sm-6">
+                      <div class="item d-flex align-items-center">
+                        <div class="icon bg-green"><i class="fa fa-mixcloud"></i></div>
+                        <div class="title"><span>Ozone<br></span>
+                          <div class="progress">
+                            <div role="progressbar" style="width: 40%; height: 4px;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-green"></div>
+                          </div>
                         </div>
+                        <div class="number"><strong>40</strong></div>
                       </div>
-                      <div class="number"><strong>40</strong></div>
                     </div>
-                  </div>
 
-                  <!-- Item -->
-                  <div class="col-xl-3 col-sm-6">
-                    <div class="item d-flex align-items-center">
-                      <div class="icon bg-orange"><i class="fa fa-volume-up"></i></div>
-                      <div class="title"><span>Noise</span>
-                        <div class="progress">
-                          <div role="progressbar" style="width: 50%; height: 4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-orange"></div>
+                    <!-- Item -->
+                    <div class="col-xl-3 col-sm-6">
+                      <div class="item d-flex align-items-center">
+                        <div class="icon bg-orange"><i class="fa fa-volume-up"></i></div>
+                        <div class="title"><span>Noise</span>
+                          <div class="progress">
+                            <div role="progressbar" style="width: 50%; height: 4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-orange"></div>
+                          </div>
                         </div>
+                        <div class="number"><strong>50</strong></div>
                       </div>
-                      <div class="number"><strong>50</strong></div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </section>
             </section>
+
+
 
 
           <header class="page-header">
@@ -740,9 +720,9 @@
           </header>
           <br><br>
           <section class="tables" style="padding-top:5px;">
-            <div class="container-fluid">
+            <div class="container-fluid" >
               <div class="row">
-                <div class="col-lg-6 slideanim">
+                <div class="col-lg-6 ">
                   <div class="card">
                     <div class="card-close">
                       <div class="dropdown">
@@ -810,7 +790,7 @@
                 </div>
 
                 <!-- Pie Chart -->
-                <div class="col-lg-6 slideanim">
+                <div class="col-lg-6 ">
                   <div class="pie-chart-example card">
                     <div class="card-close">
                       <div class="dropdown">
@@ -828,7 +808,7 @@
                 </div>
 
                 <!-- Polar Chart-->
-                <div class="col-lg-6 slideanim">
+                <div class="col-lg-6 ">
                   <div class="polar-chart-example card">
                     <div class="card-close">
                       <div class="dropdown">
@@ -845,7 +825,7 @@
                   </div>
                 </div>
 
-                <div class="col-lg-6 slideanim">
+                <div class="col-lg-6 ">
                   <div class="card">
                     <div class="card-close">
                       <div class="dropdown">
@@ -914,7 +894,7 @@
                 </div>
 
 
-                <div class="col-lg-6 slideanim">
+                <div class="col-lg-6 ">
                   <div class="card">
                     <div class="card-close">
                       <div class="dropdown">
@@ -981,7 +961,7 @@
                   </div>
                 </div>
                 <!-- Doughnut Chart -->
-                <div class="col-lg-6 slideanim">
+                <div class="col-lg-6 ">
                   <div class="pie-chart-example card">
                     <div class="card-close">
                       <div class="dropdown">
@@ -998,7 +978,7 @@
                   </div>
                 </div>
 
-                <div class="col-lg-6 slideanim">
+                <div class="col-lg-6 ">
                   <div class="radar-chart-example card">
                     <div class="card-close">
                       <div class="dropdown">
@@ -1015,7 +995,7 @@
                   </div>
                 </div>
 
-                <div class="col-lg-6 slideanim">
+                <div class="col-lg-6 ">
                   <div class="card">
                     <div class="card-close">
                       <div class="dropdown">
@@ -1143,7 +1123,7 @@
     <script>
     // Show animated elements
     $(window).scroll(function() {
-      $(".slideanim").each(function(){
+      $(".").each(function(){
         var pos = $(this).offset().top;
 
         var winTop = $(window).scrollTop();
