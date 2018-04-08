@@ -280,7 +280,7 @@ navbar-default{
   padding: 8px 35px;
 }
 
-  .info{
+  /* .info{
   position: absolute;
   height: auto;
   max-height: 665px;
@@ -291,8 +291,23 @@ navbar-default{
   top: 40px;
   box-shadow: 13px 15px 50px -20px black;
   border-radius: 15px;
-  /* right: 80px; */
+  right: 80px;
   overflow-y: scroll;
+  } */
+
+  .info{
+    position: absolute;
+    height: auto;
+    max-height: 665px;
+    display: block;
+    background: #fff;
+    z-index: 9;
+    text-align: center;
+    top: 26px;
+    box-shadow: 13px 15px 50px -20px black;
+    border-radius: 15px;
+    right: 80px;
+    overflow-y: scroll;
   }
 
 .info .row{
@@ -358,7 +373,7 @@ navbar-default{
     left: 160%;
     margin: -20px 0 0 -86px;
     width: 100%;
-    color: #673AB7;
+    color: #2f84b1;
     text-align: center;
     line-height: 40px;
     font-size: 12px;

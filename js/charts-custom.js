@@ -320,7 +320,7 @@ $(document).ready(function () {
             },
         },
         data: {
-            labels: ["New Delhi", "Mumbai", "Banglore", "Ahmedabad", "Chandigarh", "Lucknow", "Jaipur"],
+            labels: ["Gujrat", "Rajasthan", "Maharastra", "Uttar Pradesh", "West Bengal", "Tripura", "Himachal Pradesh"],
             datasets: [
                 {
                     label: "Most Polluated",
@@ -403,7 +403,7 @@ $(document).ready(function () {
             scales:
             {
                 xAxes: [{
-                    display: false
+                    display: true
                 }],
                 yAxes: [{
                     display: false
@@ -482,7 +482,7 @@ $(document).ready(function () {
             scales:
             {
                 xAxes: [{
-                    display: false
+                    display: true
                 }],
                 yAxes: [{
                     display: false

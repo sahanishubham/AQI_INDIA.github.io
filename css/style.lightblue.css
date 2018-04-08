@@ -219,6 +219,12 @@ SERVICES
   box-shadow: 11px 11px 15px -15px black;
   border-radius: 15px;
 }
+
+.box-services:hover{
+  transition-delay:0.2s;
+  transition-duration:0.3s;
+  box-shadow: 11px 11px 30px -15px black;
+}
 .box-services .icon {
   text-align: center;
   font-size: 25px;
