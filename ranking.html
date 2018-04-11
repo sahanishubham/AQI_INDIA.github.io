@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <!-- Fontastic Custom icon font-->
     <link rel="stylesheet" href="css/fontastic.css">
+    <link rel="stylesheet" href="css/animate.css">
     <!-- Google fonts - Poppins -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
     <!-- theme stylesheet-->
@@ -137,12 +138,19 @@
               <h2 class="no-margin-bottom">State AQI Ranking </h2>
             </div>
           </header> -->
-          <div>
-            <div id="map" style="width:100%;height:800px;"></div>
+          <div style="margin-top:-12px;">
+            <br>
+            <br>
+            <br>
+            <iframe src="map.html" width="100%" height="800px" style="border:none;"></iframe>
+            <center>  <a href="#datas" class="animated scroll-to"> <i class="fa fa-angle-double-down icon animated  cbounce"style="font-size: 70px;text-align: center;bottom: 130px;position: relative;color:#42abe1;"></i></a></center>
+
+            <!-- <div id="map" style="width:100%;height:800px;"></div> -->
           </div>
           <br><br>
-            <section>
-              <div class="container-fluid">
+          <br><br>
+            <section >
+              <div class="container-fluid" id="datas">
                 <div class="row">
                   <!-- Bar Charts-->
                   <div class="col-lg-4">
@@ -197,7 +205,7 @@
 
           <header class="page-header" data-toggle="collapse" data-target="#Live">
             <div class="container-fluid">
-              <h2 class="no-margin-bottom"> Live Update <i class="fa fa-arrow-down"></i>  </h2>
+              <h2 class="no-margin-bottom"> Live Update <span class="caret"></span>  </h2>
             </div>
           </header>
           <br><br>
@@ -405,7 +413,7 @@
 
             <header class="page-header" data-toggle="collapse" data-target="#Weekly">
               <div class="container-fluid">
-                <h2 class="no-margin-bottom"> Weekly AQI <i class="fa fa-arrow-down"></i></h2>
+                <h2 class="no-margin-bottom">Overall Weekly Highest AQI</h2>
               </div>
             </header>
             <br><br>
@@ -532,7 +540,7 @@
 
             <header class="page-header" data-toggle="collapse" data-target="#Monthly">
               <div class="container-fluid">
-                <h2 class="no-margin-bottom"> Monthly AQI <i class="fa fa-arrow-down"></i></h2>
+                <h2 class="no-margin-bottom"> Monthly Statics</h2>
               </div>
             </header>
             <br><br>
@@ -1114,6 +1122,7 @@
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
     <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
     <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
     <script src="js/charts-home.js"></script>
     <script src="js/charts-custom.js"></script>
