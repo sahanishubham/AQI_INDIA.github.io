@@ -63,8 +63,8 @@
                 <li><a href="#" id="loginredirect"> <span id="loginbtn">Login</span></a></li>
                 <li><a href="ranking.html" class=""> <span id="rankingbtn" >Ranking</span> </a></li>
                 <li>
-                    <li class="active"><a data-toggle="pill" href="#mapview"> Map</a></li>
-                    <li><a data-toggle="pill" href="#live"><i class="fa fa-video-camera" style="color:red;"></i> &nbsp; <span style="color:red;"> Live Stream</span> </a></li>
+                    <li ><a data-toggle="pill" href="#mapview"> Map</a></li>
+                    <li class="active"><a data-toggle="pill" href="#live"><i class="fa fa-video-camera" style="color:red;"></i> &nbsp; <span style="color:red;"> Live Stream</span> </a></li>
                 </li>
               </ul>
             </div>
@@ -94,12 +94,15 @@
       <!-- loader end -->
 
     <div class="tab-content">
-      <div id="mapview" class="tab-pane fade in ">
-        <div id="map" style="width:100%;height:800px;" style="position:relative;top:0"></div>
-      </div>
-      <div id="live" class="tab-pane fade active">
+
+      <div id="live" class="tab-pane fade in active">
         <iframe src="https://g0.ipcamlive.com/player/player.php?alias=5a8f1fc3b4e64&autoplay=1" class="livevideo"></iframe>
       </div>
+
+      <div id="mapview" class="tab-pane fade">
+        <div id="map" style="width:100%;height:800px;" style="position:relative;top:0"></div>
+      </div>
+      
     </div>
 <div class="container-fluid">
 
@@ -108,7 +111,9 @@
         <div class="row">
           <div class="col-md-6">
             <div class="row" style="color: #00BCD4;">
-              <span style="font-size:30px;">New Delhi</span>
+              <span style="font-size:30px;">Rithala</span> <br>
+              <span style="font-size:11px;">New Delhi , India</span>
+
             </div>
             <div class="row">
               <span style="font-size:25px;"> <span style="color:deepskyblue;"><img src="img/AQI.png" alt="" height="25px" width="35px"></span>  <br> <span style="font-size:20px;color: #e91e63bd;background: #00bfff21; border-radius:10px;">Unhealthy</span></span>
