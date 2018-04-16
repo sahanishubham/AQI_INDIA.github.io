@@ -102,30 +102,48 @@ $(document).ready(function () {
         type: 'doughnut',
         options: {
             cutoutPercentage: 70,
+            legend: {
+                display: false
+            }
         },
         data: {
             labels: [
-                "Railway Station",
-                "New Market",
-                "Adam Beach",
-                "Loyala Garden"
+                "PM 10",
+                "PM 2.5",
+                "Temp",
+                "Humidity",
+                "C02",
+                "NO2",
+                "S02",
+                "O3",
+                "Noise"
             ],
             datasets: [
                 {
-                    data: [250, 50, 100, 40],
+                    data: [11, 23, 45, 11, 17, 78, 29, 25],
                     borderWidth: 0,
                     backgroundColor: [
                       "#ec7551",
                       "#54e69d",
                       "#42abe1",
-                      "#ffc36d"
+                      "#eb4fa0",
+                      "#ffc36d",
+                      "#aed581",
+                      "#8bc34a",
+                      "#ef5350",
+                      "#616161"
+
                     ],
                     hoverBackgroundColor: [
                       "#ec7551",
                       "#54e69d",
                       "#42abe1",
-                      "#ff7676",
-                      "#ffc36d"
+                      "#eb4fa0",
+                      "#ffc36d",
+                      "#aed581",
+                      "#8bc34a",
+                      "#ef5350",
+                      "#616161"
                     ]
                 }]
             }
@@ -493,50 +511,292 @@ $(document).ready(function () {
             }
         },
         data: {
-            labels: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O"],
+            labels: ["Mon", "Tue", "Wed", "Thr", "Fri", "Sat", "Sun"],
             datasets: [
                 {
                     label: "Data Set 1",
                     backgroundColor: [
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d'
+                        '#ec7551',
+                        '#42abe1',
+                        '#eb4fa0',
+                        '#ffc36d',
+                        '#aed581',
+                        '#8bc34a',
+                        '#ef5350'
                     ],
                     borderColor: [
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d',
-                        '#54e69d'
+                      '#ec7551',
+                      '#42abe1',
+                      '#eb4fa0',
+                      '#ffc36d',
+                      '#aed581',
+                      '#8bc34a',
+                      '#ef5350'
                     ],
                     borderWidth: 1,
-                    data: [40, 33, 22, 28, 40, 25, 30, 40, 28, 27, 22, 15, 20, 24, 30]
+                    data: [40, 33, 22, 28, 40, 25, 30]
                 }
             ]
         }
     });
+
+    // ------------------------------------------------------- //
+    // Bar Chart 2
+    // ------------------------------------------------------ //
+    var BARCHART2 = $('#barChart3');
+    var barChartHome = new Chart(BARCHART2, {
+        type: 'bar',
+        options:
+        {
+            scales:
+            {
+                xAxes: [{
+                    display: true
+                }],
+                yAxes: [{
+                    display: false
+                }],
+            },
+            legend: {
+                display: false
+            }
+        },
+        data: {
+            labels: ["Mon", "Tue", "Wed", "Thr", "Fri", "Sat", "Sun"],
+            datasets: [
+                {
+                    label: "Data Set 1",
+                    backgroundColor: [
+                        '#ec7551',
+                        '#42abe1',
+                        '#eb4fa0',
+                        '#ffc36d',
+                        '#aed581',
+                        '#8bc34a',
+                        '#ef5350'
+                    ],
+                    borderColor: [
+                      '#ec7551',
+                      '#42abe1',
+                      '#eb4fa0',
+                      '#ffc36d',
+                      '#aed581',
+                      '#8bc34a',
+                      '#ef5350'
+                    ],
+                    borderWidth: 1,
+                    data: [40, 33, 22, 28, 40, 25, 30]
+                }
+            ]
+        }
+    });
+
+    // ------------------------------------------------------- //
+    // Bar Chart 2
+    // ------------------------------------------------------ //
+    var BARCHART2 = $('#barChart4');
+    var barChartHome = new Chart(BARCHART2, {
+        type: 'bar',
+        options:
+        {
+            scales:
+            {
+                xAxes: [{
+                    display: true
+                }],
+                yAxes: [{
+                    display: false
+                }],
+            },
+            legend: {
+                display: false
+            }
+        },
+        data: {
+            labels: ["Mon", "Tue", "Wed", "Thr", "Fri", "Sat", "Sun"],
+            datasets: [
+                {
+                    label: "Data Set 1",
+                    backgroundColor: [
+                        '#ec7551',
+                        '#42abe1',
+                        '#eb4fa0',
+                        '#ffc36d',
+                        '#aed581',
+                        '#8bc34a',
+                        '#ef5350'
+                    ],
+                    borderColor: [
+                      '#ec7551',
+                      '#42abe1',
+                      '#eb4fa0',
+                      '#ffc36d',
+                      '#aed581',
+                      '#8bc34a',
+                      '#ef5350'
+                    ],
+                    borderWidth: 1,
+                    data: [40, 33, 22, 28, 40, 25, 30]
+                }
+            ]
+        }
+    });
+
+    // ------------------------------------------------------- //
+    // Bar Chart 2
+    // ------------------------------------------------------ //
+    var BARCHART2 = $('#barChart5');
+    var barChartHome = new Chart(BARCHART2, {
+        type: 'bar',
+        options:
+        {
+            scales:
+            {
+                xAxes: [{
+                    display: true
+                }],
+                yAxes: [{
+                    display: false
+                }],
+            },
+            legend: {
+                display: false
+            }
+        },
+        data: {
+            labels: ["Mon", "Tue", "Wed", "Thr", "Fri", "Sat", "Sun"],
+            datasets: [
+                {
+                    label: "Data Set 1",
+                    backgroundColor: [
+                        '#ec7551',
+                        '#42abe1',
+                        '#eb4fa0',
+                        '#ffc36d',
+                        '#aed581',
+                        '#8bc34a',
+                        '#ef5350'
+                    ],
+                    borderColor: [
+                      '#ec7551',
+                      '#42abe1',
+                      '#eb4fa0',
+                      '#ffc36d',
+                      '#aed581',
+                      '#8bc34a',
+                      '#ef5350'
+                    ],
+                    borderWidth: 1,
+                    data: [40, 33, 22, 28, 40, 25, 30]
+                }
+            ]
+        }
+    });
+
+    // ------------------------------------------------------- //
+    // Bar Chart 2
+    // ------------------------------------------------------ //
+    var BARCHART2 = $('#barChart6');
+    var barChartHome = new Chart(BARCHART2, {
+        type: 'bar',
+        options:
+        {
+            scales:
+            {
+                xAxes: [{
+                    display: true
+                }],
+                yAxes: [{
+                    display: false
+                }],
+            },
+            legend: {
+                display: false
+            }
+        },
+        data: {
+            labels: ["Mon", "Tue", "Wed", "Thr", "Fri", "Sat", "Sun"],
+            datasets: [
+                {
+                    label: "Data Set 1",
+                    backgroundColor: [
+                        '#ec7551',
+                        '#42abe1',
+                        '#eb4fa0',
+                        '#ffc36d',
+                        '#aed581',
+                        '#8bc34a',
+                        '#ef5350'
+                    ],
+                    borderColor: [
+                      '#ec7551',
+                      '#42abe1',
+                      '#eb4fa0',
+                      '#ffc36d',
+                      '#aed581',
+                      '#8bc34a',
+                      '#ef5350'
+                    ],
+                    borderWidth: 1,
+                    data: [40, 33, 22, 28, 40, 25, 30]
+                }
+            ]
+        }
+    });
+
+    // ------------------------------------------------------- //
+    // Bar Chart 2
+    // ------------------------------------------------------ //
+    var BARCHART2 = $('#barChart7');
+    var barChartHome = new Chart(BARCHART2, {
+        type: 'bar',
+        options:
+        {
+            scales:
+            {
+                xAxes: [{
+                    display: true
+                }],
+                yAxes: [{
+                    display: false
+                }],
+            },
+            legend: {
+                display: false
+            }
+        },
+        data: {
+            labels: ["Mon", "Tue", "Wed", "Thr", "Fri", "Sat", "Sun"],
+            datasets: [
+                {
+                    label: "Data Set 1",
+                    backgroundColor: [
+                        '#ec7551',
+                        '#42abe1',
+                        '#eb4fa0',
+                        '#ffc36d',
+                        '#aed581',
+                        '#8bc34a',
+                        '#ef5350'
+                    ],
+                    borderColor: [
+                      '#ec7551',
+                      '#42abe1',
+                      '#eb4fa0',
+                      '#ffc36d',
+                      '#aed581',
+                      '#8bc34a',
+                      '#ef5350'
+                    ],
+                    borderWidth: 1,
+                    data: [40, 33, 22, 28, 40, 25, 30]
+                }
+            ]
+        }
+    });
+
+
+
 
 
     // ------------------------------------------------------- //
