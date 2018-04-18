@@ -316,7 +316,7 @@ a.link {
 }
 
 .info{
-padding-top:5px;
+padding-top:0px;
 border: 3px solid #42abe1;
 position: absolute;
 height: auto;
@@ -326,7 +326,7 @@ background: #ffffffc4;
 z-index: 9;
 /* color: white; */
 text-align: center;
-top: 130px;
+top: 125px;
 box-shadow: 0 10px 20px rgba(109, 109, 109, 0.16) !important;
 border-radius: 8px;
 right: 80px;
