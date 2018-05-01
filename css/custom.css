@@ -321,6 +321,7 @@ border: 3px solid #42abe1;
 position: absolute;
 height: auto;
 max-height: 730px;
+max-width: 360px;
 /* background:linear-gradient(to right, #5989e5ad, #37cfdc8a); */
 background: #ffffffc4;
 z-index: 9;

@@ -27,6 +27,13 @@
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+  <style media="screen">
+    #doughnutChartExample{
+      max-width: 324px;
+      max-height: 162px;
+    }
+  </style>
   </head>
   <body>
     <!-- Top bar-->
@@ -583,7 +590,10 @@
             <div class="row">
               <div class="col-md-12" style="margin-top:-25px;">
                 <img src="img/AQI.png" alt="" height="25px" width="35px" style="position:relative;top:100px;">
-                <canvas id="doughnutChartExample"></canvas>
+                <center>
+            <canvas id="doughnutChartExample" style="  max-width: 324px;  max-height: 162px;"></canvas>
+                <center>
+
                 <!-- <img src="img/smoke.png" alt="">
                 <p>PM : 2.5</p> -->
               </div>

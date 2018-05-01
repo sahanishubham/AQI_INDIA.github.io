@@ -100,6 +100,7 @@ $(document).ready(function () {
     var DOUGHNUTCHARTEXMPLE  = $('#doughnutChartExample');
     var pieChartExample = new Chart(DOUGHNUTCHARTEXMPLE, {
         type: 'doughnut',
+        responsive: true,
         options: {
             cutoutPercentage: 70,
             legend: {
@@ -546,6 +547,7 @@ $(document).ready(function () {
     var BARCHART2 = $('#barChart3');
     var barChartHome = new Chart(BARCHART2, {
         type: 'bar',
+        responsive: true,
         options:
         {
             scales:
