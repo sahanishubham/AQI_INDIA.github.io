@@ -33,6 +33,11 @@
       max-width: 324px;
       max-height: 162px;
     }
+
+    .modal-dialog{
+        max-width: 1300px;
+      }
+
   </style>
   </head>
   <body>
@@ -46,7 +51,7 @@
         &nbsp;
        <form class="navbar-form navbar-left col-md-3" action="index.html">
          <div class="input-group" style="box-shadow: 0 10px 20px rgba(109, 109, 109, 0.16) !important;">
-           <input type="text" class="form-control city-input-box " placeholder=" Check Any City AQI...">
+           <input type="text" class="form-control city-input-box " placeholder=" Check Any City AQI !">
            <input type="submit" name="Search" class="city-search-btn" value="Check">
          </div>
        </form>
@@ -59,7 +64,7 @@
             <li class="nav-item"><a href="#testimonials" class="nav-link link-scroll">Download</a></li>
             <li class="nav-item"><a href="#testimonials" class="nav-link link-scroll">Contact Us</a></li>
             <li> <a data-toggle="pill" href="#mapview" class="nav-link link-scroll"> Map</a></li>
-            <li> <a data-toggle="pill" href="#live" class="nav-link link-scroll active"><i class="fa fa-video-camera" style="color:red;"></i>&nbsp; <span style="color:red;"> Live Stream</span></a></li>
+            <li data-toggle="modal" data-target="#myModal"> <a data-toggle="pill" href="#live" class="nav-link link-scroll active"><i class="fa fa-video-camera" style="color:red;"></i>&nbsp; <span style="color:red;"> Live Stream</span></a></li>
           </ul>
           <div class="navbar-text">
             <!-- Button trigger modal--><a href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-primary navbar-btn btn-shadow btn-gradient">Sign Up</a>
@@ -67,6 +72,13 @@
         </div>
       </nav>
     </header>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <iframe src="https://g0.ipcamlive.com/player/player.php?alias=5a8f1fc3b4e64&autoplay=1" class="livevideo" style="width: 1300px;height: 770px;max-width: 1300px; border:none;"></iframe>
+      </div>
+    </div>
 
     <!-- loader start -->
     <div id="preloader" style="height:1000px;">

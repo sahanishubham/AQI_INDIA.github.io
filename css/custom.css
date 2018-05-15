@@ -304,12 +304,12 @@ a.link {
 }
 
 
-.livevideo{
+/* .livevideo{
   position: relative;
-  height: 700px;
-  width: 100%;
+  height: 500px;
+  width: 700px;
   border: none;
-}
+} */
 
 #hero{
   padding: 0px;
@@ -428,3 +428,7 @@ font-size: 16px;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
+
+.modal-dialog{
+    max-width: 1300px;
+  }
