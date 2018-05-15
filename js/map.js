@@ -51,7 +51,7 @@
 
 	    var myOptions = {
 	        center: new google.maps.LatLng(21.278657,81.866144),
-	        zoom: 5,
+	        zoom: 4,
 	        mapTypeId: google.maps.MapTypeId.ROADMAP
 	    };
 	    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);

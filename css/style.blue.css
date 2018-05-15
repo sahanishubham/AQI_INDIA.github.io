@@ -342,8 +342,9 @@ nav.navbar .navbar-brand {
 
 nav.navbar a.nav-link {
 color: #333;
-font-size: 16px;
+font-size: 14px;
 margin-left: 16px;
+font-weight: 500;
 }
 
 nav.navbar a.nav-link:hover, nav.navbar a.nav-link.active {
