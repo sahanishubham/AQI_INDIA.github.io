@@ -91,7 +91,7 @@
     <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
       <div class="modal-dialog">
-        <!-- <iframe src="https://g0.ipcamlive.com/player/player.php?alias=5a8f1fc3b4e64&autoplay=1" class="livevideo" style="width: 1300px;height: 770px;max-width: 1300px; border:none;"></iframe> -->
+        <iframe src="https://g0.ipcamlive.com/player/player.php?alias=5a8f1fc3b4e64&autoplay=1" class="livevideo" style="width: 1300px;height: 770px;max-width: 1300px; border:none;"></iframe>
       </div>
     </div>
 
@@ -499,8 +499,8 @@
     </div>
     <section id="hero" class="hero hero-home bg-gray hidden-xs">
 
-        <div id="map" style="width:100%;height:700px;"></div>
-        <div style="position:relative;top: -465px;max-width:240px;color:white;font-size: 12px;margin-bottom: -425px;" class="col-md-offset-4 col-md-4 animated bounceInRight">
+        <div id="map_canvas" style="width:100%;height:700px;"></div>
+        <div style="position:relative;top: -465px;color:white;font-size: 12px;margin-bottom: -425px;" class="col-md-offset-4 col-md-4 animated bounceInRight">
           <a href="#" style="color:white;" > <span style="background: #5390e3;color:white;border-radius: 5px;padding: 1px 5px;">Mon 16 Apr</span>  <br><span style="font-size: 30px;color: #558de4;border-radius: 5px;padding: 0px 5px;"> 2 <span class="deadornot ">:</span> 43 <span class="deadornot ">: 51 </span> PM </span></a> <br>
           <span style="background-color:#8bc34a;box-shadow:0 10px 20px rgba(109, 109, 109, 0.16) !important;margin:5px;padding:7px;border-radius:5px;">Good (0-50)</span><br>
           <span style="background-color:#ec7451;box-shadow:0 10px 20px rgba(109, 109, 109, 0.16) !important;margin:5px;padding:7px;border-radius:5px;">Moderate (51-100)</span><br>
@@ -823,9 +823,7 @@
             </ul>
           </div>
           <div class="col-lg-3 col-md-6">
-            <h5>
-              Selected Cases
-            </h5>
+            <h5>Selected Cases</h5>
             <ul class="links list-unstyled">
               <li> <a href="#">Guess Conntect</a></li>
               <li> <a href="#">Postly</a></li>
@@ -852,7 +850,6 @@
     <!-- Javascript files-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"> </script>
-    <script src="js/api_auth.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
     <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
@@ -860,8 +857,9 @@
     <script src="chart.js/Chart.min.js"></script>
     <script src="js/charts-home.js"></script>
     <script src="js/charts-custom.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcb8twJqzWNDvZEtZeNvp4TaMoAjo0ksQ&callback=initMap" type="text/javascript"></script>
   <script src="js/custom.js"></script>
-  <script src="http://maps.google.com/maps/api/js?key=AIzaSyBcb8twJqzWNDvZEtZeNvp4TaMoAjo0ksQ"type="text/javascript"></script>
-  <script src="js/map.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/api_auth.js"></script>
   </body>
 </html>
